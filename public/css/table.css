@@ -1,0 +1,103 @@
+@charset "utf-8";
+			*{
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			.table{
+				width: 1000px;
+				margin: 0px auto;
+				border: 1px solid #E8F6FE;
+				min-height: 500px;
+			}
+			.table .title{
+				background-color: #E8F6FE;
+				height: 40px;
+				font-size: 20px;
+				font-weight: 800;
+				line-height: 40px;
+				padding-left: 15px;
+				color: red;
+				border-top: 1px solid #FFFFFF;
+			}
+			.tablediv table{
+				width: 100%;
+				border: none;
+				text-align: center;
+				padding: 15px;
+			}
+			.tablediv table tr{
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			/*表格边框*/
+			.tablediv table tr td,th{
+				border-bottom: 1px solid blue;
+			}
+			.tablediv table thead tr th:first-child{/*第一个起作用*/
+				border-left: 1px solid blue;
+			}
+			.tablediv table thead tr th:last-child{/*最后一个起作用*/
+				border-right: 1px solid blue;
+			}
+			.tablediv table tbody tr td:first-child{/*第一个起作用*/
+				border-left: 1px solid blue;
+			}
+			.tablediv table tbody tr td:last-child{/*最后一个起作用*/
+				border-right: 1px solid blue;
+			}
+			.tablediv thead tr th{
+				background-color: #E8F6FE;
+				border-top: 1px solid blue;
+			}
+			
+			/*设置图片样式*/
+			.tablediv table tbody tr td:first-child img{
+				display: none;
+			}
+			.tablediv table tbody tr td:first-child:hover img{
+				display: inline;
+			}
+			.tablediv table tbody tr td:first-child:hover span{
+				display: none;
+			}
+			.table .imgstyle{
+				background-image: url(img/u29.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				padding: 10px;
+				margin-left: 10px;
+			}
+			
+			/*定义计算器*/
+			.tablediv table tbody tr{
+				counter-increment: count;/*定义计算器增加值*/
+			}
+			.tablediv table tbody tr td:first-child span:before{/*第一个span标签之后起作用*/
+				content: counter(count);/*使用已经定义的计算器*/
+			}
+			
+			/*输入框设置*/
+			.tablediv table tbody tr input[type=text]{
+				border: 1px solid #FFFFFF;
+				text-align: center;
+				border-color: transparent;
+				background-color: transparent;
+				outline-style: none;
+				width: 100%;
+			}
+			.tablediv table tbody tr input:hover{
+				border: 1px solid #000000;
+				text-align: center;
+				border-color: darkviolet;
+			}
+			.tablediv table tbody tr input.inputerror{
+				border: 1px solid red;
+				background-color: rgba(255,0,0,0.3);
+			}
+			.tablediv table tr:hover{
+				background-color: #E6E6E6;
+			}
+			.tablediv table tr:hover{
+				background-color: #E6E6E6;
+			}

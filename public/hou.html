@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>客户管理</title>
+		<link rel="stylesheet" type="text/css" href="css/table.css"/>
+		<script type="text/javascript">
+			var add = 0;
+			window.onload = function(){
+				del();//初始化删除事件
+				checkphone();
+				checkemail();
+				
+				//提交按钮事件
+				document.getElementById("sub").onclick = function(){
+					//第一验证所有的手机号码和邮箱
+					var falg = true;
+					var inputs = add.getElementsByTagName("input");
+					for( var i = 0 ; i < inputs.length ; i++ ){
+						if(check(inputs[i]) == false){
+							falg = false;
+							break;
+						}
+					}
+					if(falg == false){//判断提交数据是否完整
+						alert("验证失败");
+						return;
+					}
+					//第二组合提交数据
+					var dates = [];
+					falg = false;
+					var trs = add.getElementsByTagName("tr");
+					for( var i = 0 ; i < trs.length ; i++ ){//有几行
+						var inputsdata = trs[i].getElementsByTagName("input");//获取每行的input
+						if(inputsdata[0].value == "" || inputsdata[0].value.length == 0){//判断每一行第一个数据是否为空值或长度是否为0
+							continue;
+						}
+						var row = [];
+						for( var j = 0 ; j < inputsdata.length ; j++){//每行input里的长度（也就是值）循环
+							if(inputsdata[j].getAttribute("name") == "radio"){
+								if(inputsdata[j].checked){
+									falg = true;
+								}
+							}else{
+									row.push(inputsdata[j].value);//把inputsdata[j].value的数据添加到row
+								}
+							}
+						dates.push(row);//把row数据添加到dates末尾
+					}
+					console.log(dates);
+					if(dates == true){//判断checked的值
+						alert("请选择首要联系人");
+						return;
+					}
+					if(dates.length == 0){//判断第一个input是否为空
+						alert("请至少有一个联系人信息");
+						return;
+					}
+				}
+				
+				//增加事件
+				add = document.getElementsByTagName("tbody")[0];//初始化对象
+				var addobj = document.getElementById("add_Node");//绑定增加事件
+				var html = '<tr><td><span></span><img src="img/ico_sc.gif"></td><td><input type="text" name="uesrname"/></td><td><input type="text" name="phone"/></td><td><input type="text" name="email"/></td><td><input type="text" name="QQ"/></td><td><input type="text" name="address"/></td><td><input type="radio" name="radio"></td></tr>';
+				addobj.onclick = function(){//点击按钮增加一个事件
+					var trobj = document.createElement("tr");
+					trobj.innerHTML = html;
+					add.appendChild(trobj);
+					del();
+					checkphone();
+					checkemail();
+				};
+			}
+			
+			//删除事件
+			function del(){//删除元素
+				var imgs = document.getElementsByTagName("img");
+				for(var i = 0;i < imgs.length;i++){
+					imgs[i].onclick = function(){
+						add.removeChild(this.parentNode.parentNode);
+					};
+				}
+			}
+			
+			//检测条件事件
+			function check( obj ){//检测条件
+				var strings = /.*/;
+				if(obj.length == 0 || obj.value == ""){
+					return true;
+				}
+				if(obj.getAttribute("name") == "phone"){
+					strings = /^(\+86||0)?[1-9][1-9][0-9]{9}$/;
+				}else if(obj.getAttribute("name") == "email"){
+					strings = /^[A-z0-9_\.]+@[A-z0-9_]+\.(com)$/;
+				}
+				if( !strings.test(obj.value)){
+					obj.setAttribute("class","inputerror");
+					return false;
+				}
+				return true;
+			}
+			
+			//清除样式事件
+			function clear( obj ){//清除样式
+				obj.removeAttribute("class");
+			}
+			
+			//检测事件
+			function checkphone(){//检测手机号码
+				var phones = document.getElementsByTagName("input");
+				var temp = 0;
+				for( var i = 0 ; i < phones.length ; i++){
+					temp = phones[i];
+						temp.onblur = function(){
+							check( this );
+						}
+						temp.onfocus = function(){
+							clear( this );
+						}
+				}
+			}
+			
+			//检测事件
+			function checkemail(){//检测邮箱
+				var emails = document.getElementsByTagName("input");
+				var temp = 0;
+				for( var i = 0 ; i < emails.length ; i++){
+					temp = emails[i];
+						temp.onblur = function(){
+							check( this );
+						}
+						temp.onfocus = function(){
+							clear( this );
+						}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="table">
+			<div class="title">
+				客户管理
+			</div>
+			<div class="tablediv">
+				<table cellpadding="0px" cellspacing="0px">
+					<thead>
+						<tr>
+							<th width="10%">编号</th>
+							<th width="10%">联系人姓名</th>
+							<th width="20%">手机号码</th>
+							<th width="20%">邮箱</th>
+							<th width="10%">QQ号码</th>
+							<th width="20%">联系地址</th>
+							<th width="10%">首要联系人</th>
+						</tr>
+					</thead>
+					<tbody>
+						<form action="" name="forms" method="post">
+						<tr>
+							<td><span></span><img src="img/ico_sc.gif"></td>
+							<td><input type="text" name="uesrname"/></td>
+							<td><input type="text" name="phone"/></td>
+							<td><input type="text" name="email"/></td>
+							<td><input type="text" name="QQ"/></td>
+							<td><input type="text" name="address"/></td>
+							<td><input type="radio" name="radio" checked="checked"></td>
+						</tr>
+						<tr>
+							<td><span></span><img src="img/ico_sc.gif"></td>
+							<td><input type="text" name="uesrname"/></td>
+							<td><input type="text" name="phone"/></td>
+							<td><input type="text" name="email"/></td>
+							<td><input type="text" name="QQ"/></td>
+							<td><input type="text" name="address"/></td>
+							<td><input type="radio" name="radio"></td>
+						</tr>
+						</form>
+					</tbody>
+				</table>
+			</div>
+			<span class="imgstyle" id="add_Node"></span>
+			<div style="text-align: center;"><button id="sub">提交</button></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,267 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+body{
+    background: #9ACFEA;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
+}
+
+//定义通用样式
+.color-font_size(@color,@font-size){
+    color: @color;
+    font-size: @font-size;
+}
+.hend-style{
+    .hend{
+        font-weight: bold;
+        text-align: center;
+        a{
+            height: 30px;
+            background: white;
+            line-height: 30px;
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:hover{
+                background: #2FB593;
+                color: white;
+            }
+            &:visited{
+                color: black;
+            }
+        }
+    }
+}
+
+//头部信息
+.header{
+    .logo{
+        float: left;
+    }
+    .logo-font{
+        font-weight: bold;
+        line-height: 100px;
+        font-size: 14px;
+        color: #449D44;
+    }
+    .nav-top{
+        float: right;
+        ul{
+            li{
+                float: left;
+                cursor: pointer;
+                padding: 15px;
+                background: #74adaa;
+                color: white;
+                &:hover{
+                    background: #ccc;
+                }
+            }
+        }
+        .search {
+            position: relative;
+            border-left: 1px solid #fff;
+            float: right;
+            background: #DCDCDC;
+            input[type="text"] {
+                width: 261px;
+                border: none;
+                padding: 10px 20px;
+                background: none;
+            }
+            input[type="submit"] {
+                border: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: url("../img/img-sprite.png") no-repeat -5px -8px;
+                width: 30px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+//尾部信息
+.footer {
+    width: 90%;
+    margin: 0px auto;
+    background: #555;
+    &-middle-in {
+        float: left;
+        padding: 10px 0;
+        h3 {
+            .color-font_size(white,20px);
+            padding: 2px 0 2px 2px;
+            display: block;
+        }
+        p {
+            .color-font_size(#989494,14px);
+            line-height: 16px;
+            width: 80%;
+            transform: all 0.5s;
+        }
+        li a {
+            .color-font_size(#989494,14px);
+            line-height: 22px;
+            transition: all 0.5s;
+            &:hover {
+                text-decoration: none;
+                color: #5CB85C;
+            }
+        }
+    }
+    &-class {
+        background: #51938f;
+        text-align: center;
+        .color-font_size(white,16px);
+        padding: 10px 0;
+    }
+}
+
+.nav-title{
+    margin-top: 20px;
+    .select{
+        .regionTabs{
+            margin-bottom: 20px;
+            box-shadow: 0 1px 5px 1px #e3e2df;
+            border: 1px solid #e3e2df;
+            display: table;
+            li{
+                height: 35px;
+                padding: 4px 15px;
+                line-height: 35px;
+                font-weight: bold;
+                transition: all 0.3s;
+                display: table-cell;
+                cursor: pointer;
+                background: #f4f3f0;
+                border-left: 1px solid #dad7c8;
+                text-align: center;
+                a{
+                    display: inline-block;
+                    font-size: 16px;
+                    width: 253px;
+                    vertical-align: middle;
+                }
+                &:hover{
+                    background: #dad7c8;
+                    a{
+                        color: #51938f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    .ong-img1{
+        margin-bottom: 30px;
+        .hend-style;
+    }
+    .ong-img2{
+        margin-bottom: 30px;
+        .hend-style;
+    }
+    .two-img1{
+        margin-bottom: 30px;
+        .hend-style;
+    }
+    .two-img2{
+        margin-bottom: 30px;
+        .hend-style;
+    }
+    .three-img1{
+        margin-bottom: 30px;
+        .hend-style;
+    }
+    .three-img2{
+        margin-bottom: 30px;
+        .hend-style;
+    }
+    .p{
+        text-align: center;
+        line-height: 35px;
+        margin-bottom: 20px;
+        a{
+            display: block;
+            margin: 0px auto;
+            width: 50%;
+            height: 35px;
+            font-size: 14px;
+            background: #ccc;
+            transition: all 0.3s;
+            &:hover{
+                background: #48CFAD;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo img{
+        width: 50px;
+        transition: all 0.3s;
+    }
+    .header .row .logo-font{
+        line-height: 50px;
+        font-size: 12px;
+    }
+    .header .row .nav-font{
+        line-height: 150px;
+    }
+    .content img{
+        width: 265px;
+    }
+    .content .ong-img1 figure p{
+        width: 250px;
+    }
+    .content .ong-img2 figure p{
+        width: 250px;
+    }
+    .content .two-img1 figure p{
+        width: 250px;
+    }
+    .content .two-img2 figure p{
+        width: 250px;
+    }
+    .content .three-img1 figure p{
+        width: 250px;
+    }
+    .content .three-img2 figure p{
+        width: 250px;
+    }
+    .nav-title .select .regionTabs li a{
+        width: 35px;
+    }
+}
+@media (min-width: 992px) {
+    .header .logo img{
+        width: 100px;
+    }
+    .header .row .logo-font{
+        line-height: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .header .logo img{
+        width: 100px;
+    }
+    .header .row .logo-font{
+        line-height: 100px;
+    }
+}
