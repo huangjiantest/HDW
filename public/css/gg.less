@@ -1,0 +1,90 @@
+.color-font_size(@color,@font-size){
+    color: @color;
+    font-size: @font-size;
+}
+
+//头部信息
+.header{
+    .logo{
+        float: left;
+    }
+    .logo-font{
+        font-weight: bold;
+        line-height: 100px;
+        font-size: 14px;
+        color: #419641;
+    }
+    .nav-top{
+        float: right;
+        ul{
+            li{
+                float: left;
+                cursor: pointer;
+                padding: 15px;
+                background: #74adaa;
+                color: white;
+                &:hover{
+                    background: #ccc;
+                }
+            }
+        }
+        .search {
+            position: relative;
+            border-left: 1px solid #fff;
+            float: right;
+            background: #DCDCDC;
+            input[type="text"] {
+                width: 284px;
+                border: none;
+                padding: 10px 20px;
+                background: none;
+            }
+            input[type="submit"] {
+                border: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: url("../img/img-sprite.png") no-repeat -5px -8px;
+                width: 30px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+//尾部信息
+.footer {
+    width: 90%;
+    margin: 0px auto;
+    background: #555;
+    &-middle-in {
+        float: left;
+        padding: 10px 0;
+        h3 {
+            .color-font_size(white,20px);
+            padding: 2px 0 2px 2px;
+            display: block;
+        }
+        p {
+            .color-font_size(#989494,14px);
+            line-height: 16px;
+            width: 80%;
+            transform: all 0.5s;
+        }
+        li a {
+            .color-font_size(#989494,14px);
+            line-height: 22px;
+            transition: all 0.5s;
+            &:hover {
+                text-decoration: none;
+                color: #5CB85C;
+            }
+        }
+    }
+    &-class {
+        background: #51938f;
+        text-align: center;
+        .color-font_size(white,16px);
+        padding: 10px 0;
+    }
+}

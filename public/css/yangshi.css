@@ -1,0 +1,75 @@
+.nav-me {
+	margin: 10px 0px 0px 0px;
+}
+.nav-me > li {
+	border-right:1px solid #94c0be;
+	border-bottom: 1px solid #94c0be;
+}
+.nav-me > li:last-child {
+	border-right: none;
+}
+.nav-me li a {
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 20px 40px;
+}
+.three-d {
+	perspective: 200px;
+ 	transition:all .7s linear;
+	position: relative;
+}
+.three-d:not(.active):hover {
+	cursor: pointer;
+}
+
+.three-d:not(.active):hover .three-d-box,  .three-d:not(.active):focus .three-d-box {
+ 	transform: translateZ(-25px) rotateX(90deg);
+}
+.three-d-box {
+ 	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #FFE7C4;
+}
+.front, .back {
+	text-indent: 1.1em;
+	line-height: 40px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #74adaa;
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+}
+.nav-me li .active .front,  .nav-me li .active .back,  .nav-me li a:hover .front,  .nav-me li a:hover .back {
+	background-color: #51938f;
+	background-size: 5px 5px;
+	background-image: linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480), linear-gradient(45deg, #478480 25%, transparent 25%, transparent 75%, #478480 75%, #478480);
+}
+.nav-me ul {
+	position: absolute;
+	text-align: left;
+	line-height: 40px;
+	font-size: 14px;
+	transition: all 0.3s ease-in;
+	transform: rotateX(-90deg);
+	backface-visibility: hidden;
+}
+.nav-me > li:hover ul {
+	transform: rotateX(0deg);
+}

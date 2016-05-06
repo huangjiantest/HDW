@@ -1,0 +1,83 @@
+.header .logo {
+  float: left;
+}
+.header .logo-font {
+  font-weight: bold;
+  line-height: 100px;
+  font-size: 14px;
+  color: #419641;
+}
+.header .nav-top {
+  float: right;
+}
+.header .nav-top ul li {
+  float: left;
+  cursor: pointer;
+  padding: 15px;
+  background: #74adaa;
+  color: white;
+}
+.header .nav-top ul li:hover {
+  background: #ccc;
+}
+.header .nav-top .search {
+  position: relative;
+  border-left: 1px solid #fff;
+  float: right;
+  background: #DCDCDC;
+}
+.header .nav-top .search input[type="text"] {
+  width: 284px;
+  border: none;
+  padding: 10px 20px;
+  background: none;
+}
+.header .nav-top .search input[type="submit"] {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url("../img/img-sprite.png") no-repeat -5px -8px;
+  width: 30px;
+  height: 35px;
+}
+.footer {
+  width: 90%;
+  margin: 0px auto;
+  background: #555;
+}
+.footer-middle-in {
+  float: left;
+  padding: 10px 0;
+}
+.footer-middle-in h3 {
+  color: white;
+  font-size: 20px;
+  padding: 2px 0 2px 2px;
+  display: block;
+}
+.footer-middle-in p {
+  color: #989494;
+  font-size: 14px;
+  line-height: 16px;
+  width: 80%;
+  transform: all 0.5s;
+}
+.footer-middle-in li a {
+  color: #989494;
+  font-size: 14px;
+  line-height: 22px;
+  transition: all 0.5s;
+}
+.footer-middle-in li a:hover {
+  text-decoration: none;
+  color: #5CB85C;
+}
+.footer-class {
+  background: #51938f;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+/*# sourceMappingURL=gg.css.map */
