@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background: #C2C2C2;
+			}
+			div{
+				margin: 5px;
+			}
+			.push{
+				width: 150px;
+				height: 140px;
+				background: #C9F76F;
+				padding: 10px;
+			}
+			.circle1{
+				width: 20px;
+				height: 20px;
+				background: #111111;
+				border-radius: 50%;
+				float: left;
+				opacity: 0;
+				animation: fuck 4s infinite linear;
+			}
+			.circle2{
+				width: 20px;
+				height: 20px;
+				background: #111111;
+				border-radius: 50%;
+				float: left;
+				opacity: 0;
+				animation: fuck 4s infinite linear 0.5s;
+			}
+			.circle3{
+				width: 20px;
+				height: 20px;
+				background: #111111;
+				border-radius: 50%;
+				float: left;
+				opacity: 0;
+				animation: fuck 4s infinite linear 1s;
+			}
+			@keyframes fuck{
+				0%{opacity: 1; border-radius: 0px;}
+				20%{opacity: 0; border-radius: 0px;}
+				40%{opacity:1 border-radius: 0px;}
+				60%{opacity:1}
+				80%{opacity:0}
+				100%{opacity:1}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="push">
+			<div class="font">
+				<p>loading</p>
+			</div>
+			<div class="circle1">				
+			</div>
+			<div class="circle2">				
+			</div>
+			<div class="circle3">				
+			</div>
+		</div>
+	</body>
+</html>
