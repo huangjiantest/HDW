@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title>海岛网</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="css/yangshi.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="css/img-style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/yangshi.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/img-style.css" />
+		<script src="js/site.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/site.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
 		<div class="header">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7 col-xs-12 col-sm-7 col-lg-6">
 						<div class="logo">
-							<img src="img/logo.png" width="100px"/>
-							<img src="img/logo_font.png" width="100px"/>
+							<img src="img/logo.png" width="100px" />
+							<img src="img/logo_font.png" width="100px" />
 						</div>
 						<p class="logo-font">海滩,海浪,阳光,浪漫的情怀</p>
 					</div>
@@ -29,8 +34,8 @@
 							</ul>
 							<div class="search">
 								<form action="" method="post">
-									<input type="text" placeholder="请输入海岛名称···"/>
-									<input type="submit" value=""/>
+									<input type="text" placeholder="请输入海岛名称···" />
+									<input type="submit" value="" />
 								</form>
 							</div>
 						</div>
@@ -41,12 +46,12 @@
 				<nav class="navbar">
 					<div class="container">
 						<ul class="nav navbar-nav nav-me unstyled">
-					    <li><a href="index.html" class="three-d active">首页<span class="three-d-box"><span class="front">首页</span><span class="back">首页</span></span></a></li>
-					    <li><a href="#" class="three-d">海岛景点<span class="three-d-box"><span class="front">海岛景点</span><span class="back">海岛景点</span></span></a></li>
-					    <li><a href="#" class="three-d">美食介绍<span class="three-d-box"><span class="front">美食介绍</span><span class="back">美食介绍</span></span></a></li>
-					    <li><a href="#" class="three-d">旅游攻略<span class="three-d-box"><span class="front">旅游攻略</span><span class="back">旅游攻略</span></span></a></li>
-					    <li><a href="content.html" class="three-d">联系我们<span class="three-d-box"><span class="front">联系我们</span><span class="back">联系我们</span></span></a></li>
-					  </ul>
+							<li><a href="index.html" class="three-d active">首页<span class="three-d-box"><span class="front">首页</span><span class="back">首页</span></span></a></li>
+							<li><a href="#" class="three-d">海岛景点<span class="three-d-box"><span class="front">海岛景点</span><span class="back">海岛景点</span></span></a></li>
+							<li><a href="#" class="three-d">美食介绍<span class="three-d-box"><span class="front">美食介绍</span><span class="back">美食介绍</span></span></a></li>
+							<li><a href="#" class="three-d">旅游攻略<span class="three-d-box"><span class="front">旅游攻略</span><span class="back">旅游攻略</span></span></a></li>
+							<li><a href="content.html" class="three-d">联系我们<span class="three-d-box"><span class="front">联系我们</span><span class="back">联系我们</span></span></a></li>
+						</ul>
 					</div>
 				</nav>
 			</div>
@@ -54,18 +59,18 @@
 		<div class="banner">
 			<div class="container">
 				<div class="row">
-					<img src="img/banner.gif" width="100%"/>
+					<img src="img/banner.gif" width="100%" />
 				</div>
 			</div>
 		</div>
 		<div class="nav-title">
 			<div class="container">
 				<div class="select">
-					<ul class="regionTabs">
-						<li class="active"><a href="">亚洲</a></li>
-						<li class><a href="">欧洲</a></li>
-						<li class><a href="">美洲</a></li>
-						<li class><a href="">全球</a></li>
+					<ul class="regionTabs" id="regionTabs">
+						<li id="yz" class><a href="javascritp:void(0);">亚洲</a></li>
+						<li id="oz" class><a href="javascritp:void(0);">欧洲</a></li>
+						<li id="mz" class><a href="javascritp:void(0);">美洲</a></li>
+						<li id="qq" class><a href="javascritp:void(0);">全球</a></li>
 					</ul>
 				</div>
 			</div>
@@ -75,31 +80,31 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="ong-img1">
-							<a href="#">
+							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModal">
 								<figure class="effect-zoe">
-									<img src="img/bld/bld-title.png"/>
+									<img src="img/bld/bld-title.png" />
 									<figcaption>
 										<h2>巴厘岛 <span>印度尼西亚</span></h2>
 										<span href="#" class="icon-heart"></span>
 										<span href="#" class="icon-eye"></span>
 										<span href="#" class="icon-paper-clip"></span>
 										<p style="font-weight: bold;">巴厘岛白色沙滩上的水域是浅水的理想之地。这里丛林茂密，有许多猴子，还有许多隐蔽的石庙，都等着你来探索。</p>
-					           		</figcaption>			
+									</figcaption>
 								</figure>
 							</a>
 							<p class="hend"><a href="#">巴厘岛</a></p>
 						</div>
 						<div class="ong-img2">
-							<a href="#">
+							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa2">
 								<figure class="effect-zoe">
-									<img src="img/sbd/sbd-title.png"/>
+									<img src="img/sbd/sbd-title.png" />
 									<figcaption>
 										<h2>塞班岛 <span>马里亚纳</span></h2>
 										<span href="#" class="icon-heart"></span>
 										<span href="#" class="icon-eye"></span>
 										<span href="#" class="icon-paper-clip"></span>
 										<p style="font-weight: bold;">东西岸拥有不同的迷人景色，西案沙滩绵延，东岸岩石断崖，绚丽的海底世界，热带丛林探险，刺激的水上娱乐活动。</p>
-					           		</figcaption>			
+									</figcaption>
 								</figure>
 							</a>
 							<p class="hend"><a href="#">塞班岛</a></p>
@@ -107,31 +112,31 @@
 					</div>
 					<div class="col-md-4">
 						<div class="two-img1">
-							<a href="#">
+							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa3">
 								<figure class="effect-zoe">
-									<img src="img/jzd/jzd-title.png"/>
+									<img src="img/jzd/jzd-title.png" />
 									<figcaption>
 										<h2>济州岛 <span>韩国</span></h2>
 										<span href="#" class="icon-heart"></span>
 										<span href="#" class="icon-eye"></span>
 										<span href="#" class="icon-paper-clip"></span>
 										<p style="font-weight: bold;">济州岛有浪漫的日出和夕照，气候温和，还有美丽的沙滩，有许多人都会选择来此度蜜月。</p>
-					           		</figcaption>			
+									</figcaption>
 								</figure>
 							</a>
 							<p class="hend"><a href="#">济州岛</a></p>
 						</div>
 						<div class="two-img2">
-							<a href="#">
+							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa4">
 								<figure class="effect-zoe">
-									<img src="img/xwy/xwy-title.png"/>
+									<img src="img/xwy/xwy-title.png" />
 									<figcaption>
 										<h2>夏威夷 <span>美国</span></h2>
 										<span href="#" class="icon-heart"></span>
 										<span href="#" class="icon-eye"></span>
 										<span href="#" class="icon-paper-clip"></span>
 										<p style="font-weight: bold;">这里全年风和日丽，适宜游泳，冲浪，是风靡全球的旅游胜地。</p>
-					           		</figcaption>			
+									</figcaption>
 								</figure>
 							</a>
 							<p class="hend"><a href="#">夏威夷群岛</a></p>
@@ -139,31 +144,31 @@
 					</div>
 					<div class="col-md-4">
 						<div class="three-img1">
-							<a href="#">
+							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa5">
 								<figure class="effect-zoe">
-									<img src="img/pjd/pjd-title.png"/>
+									<img src="img/pjd/pjd-title.png" />
 									<figcaption>
 										<h2>普吉岛 <span>泰国</span></h2>
 										<span href="#" class="icon-heart"></span>
 										<span href="#" class="icon-eye"></span>
 										<span href="#" class="icon-paper-clip"></span>
 										<p style="font-weight: bold;">从蓝色的泻湖到粉色的落日再到穿着橙色长袍的僧侣，普吉岛 (Phuket) 为游客提供彩虹般缤纷的壮观度假美景。 三轮摩托车、出租车、巴士和长尾船载着游客在这些美景间穿行。 </p>
-					           		</figcaption>			
+									</figcaption>
 								</figure>
 							</a>
 							<p class="hend"><a href="#">普吉岛</a></p>
 						</div>
 						<div class="three-img2">
-							<a href="#">
+							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa6">
 								<figure class="effect-zoe">
-									<img src="img/medf/medf-title.png"/>
+									<img src="img/medf/medf-title.png" />
 									<figcaption>
 										<h2>马尔代夫 <span>马尔代夫</span></h2>
 										<span href="#" class="icon-heart"></span>
 										<span href="#" class="icon-eye"></span>
 										<span href="#" class="icon-paper-clip"></span>
 										<p style="font-weight: bold;">这是在印度洋周围一群田园般的岛屿，绿松石般的泻湖，水下珊瑚花园，随风摇曳的棕榈叶和美丽的白色沙滩使这里称为赤道上的天堂。</p>
-					           		</figcaption>			
+									</figcaption>
 								</figure>
 							</a>
 							<p class="hend"><a href="#">马尔代夫群岛</a></p>
@@ -171,9 +176,61 @@
 					</div>
 					<div class="clearfix"></div>
 					<div class="p">
-						<a href="#">查看全部目的地</a>
+						<a href="javascritp:void(0);">查看全部目的地</a>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="specialty-item">
+			<div class="container">
+				<div class="col-md-3 col-xs-12 col-sm-6 box1">
+					<a href="javascritp:void(0);">
+						<h3 style="margin-top: 150px;border-top: 2px solid white;border-bottom: 2px solid white;padding: 10px;">2016年&nbsp;旅行者之选</h3>
+					</a>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6 box2">
+					<a href="javascritp:void(0);">
+						<span class="glyphicon glyphicon-tasks" style="margin-top: 150px;"></span>
+						<h3 class="">一切精华,尽在掌握</h3>
+						<p>寻找处境必备的自助游指南></p>
+					</a>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6 box3">
+					<a href="javascritp:void(0);">
+						<span class="glyphicon glyphicon-list" style="margin-top: 150px;"></span>
+						<h3>玩法大不同</h3>
+						<p>寻找最适合你的旅游攻略></p>
+					</a>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6 box4">
+					<a href="javascritp:void(0);">
+						<h3 style="margin-top: 50px;">手机APP</h3>
+						<p>随时随地查找当地周边信息</br>好吃好玩一网打尽!</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="link">
+			<div class="container">
+				<div class="xian"></div>
+				<h3>热门旅游目的地</h3>
+				<ul>
+					<li><a href="javascritp:void(0);">斯里兰卡旅游</a></li>
+					<li><a href="javascritp:void(0);">印度尼西亚旅游</a></li>
+					<li><a href="javascritp:void(0);">新西兰旅游</a></li>
+					<li><a href="javascritp:void(0);">马尔代夫旅游</a></li>
+					<li><a href="javascritp:void(0);">毛里求斯旅游</a></li>
+				</ul>
+				<div class="clearfix"></div>
+				<h3>友情链接</h3>
+				<ul>
+					<li><a href="http://flight.qunar.com/">去哪儿网机票</a></li>
+					<li><a href="http://www.tuniu.com/">途牛旅游网</a></li>
+					<li><a href="http://www.ly.com/">同程旅游</a></li>
+					<li><a href="http://www.mafengwo.cn/">蚂蜂窝自由行</a></li>
+					<li><a href="http://www.cits.cn/">国旅在线</a></li>
+					<li><a href="http://www.ch.com/">春秋航空</a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="footer">
@@ -189,10 +246,10 @@
 						<div class="footer-middle-in">
 							<h3>信息</h3>
 							<ul>
-								<li><a href="#">关于我们</a></li>
-								<li><a href="#">常见问题</a></li>
-								<li><a href="#">隐私政策</a></li>
-								<li><a href="#">条款条件</a></li>
+								<li><a href="javascritp:void(0);">关于我们</a></li>
+								<li><a href="javascritp:void(0);">常见问题</a></li>
+								<li><a href="javascritp:void(0);">隐私政策</a></li>
+								<li><a href="javascritp:void(0);">条款条件</a></li>
 							</ul>
 						</div>
 					</div>
@@ -201,15 +258,15 @@
 							<h3>客户服务</h3>
 							<ul>
 								<li><a href="content.html">联系我们</a></li>
-								<li><a href="#">意见反馈</a></li>
-								<li><a href="#">站点地图</a></li>
+								<li><a href="javascritp:void(0);">意见反馈</a></li>
+								<li><a href="javascritp:void(0);">站点地图</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-2 col-xs-12">
 						<div class="footer-middle-in">
 							<p style="padding-left: 20px;">关注微信</p>
-							<img src="img/weixin.jpg"/>
+							<img src="img/weixin.jpg" />
 							<p>扫一扫，即可开启你的梦幻之旅</p>
 						</div>
 					</div>
@@ -217,5 +274,87 @@
 			</div>
 			<p class="footer-class">Copyright © 2016.04 &nbsp;一切解释权归我所有 </p>
 		</div>
+
+		<!--模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/bld/bld.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/sbd/sbd.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/jzd/jzd.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/xwy/xwy.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/pjd/pjd.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/medf/medf.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</body>
+
 </html>

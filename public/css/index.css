@@ -38,6 +38,11 @@ li {
 .hend-style .hend a:visited {
   color: black;
 }
+.box-a {
+  width: 270px;
+  height: 365px;
+  display: inline-block;
+}
 .header .logo {
   float: left;
 }
@@ -62,7 +67,6 @@ li {
 }
 .header .nav-top .search {
   position: relative;
-  border-left: 1px solid #fff;
   float: right;
   background: #DCDCDC;
 }
@@ -307,6 +311,93 @@ li {
 }
 .content .p a:hover {
   background: #48CFAD;
+  color: white;
+}
+.specialty-item {
+  text-align: center;
+}
+.specialty-item .box1 {
+  padding: 5px 0px;
+}
+.specialty-item .box1 a {
+  width: 270px;
+  height: 365px;
+  display: inline-block;
+  background: url(../img/traveler-choice.png) no-repeat;
+}
+.specialty-item .box1 a:hover {
+  opacity: 0.5;
+}
+.specialty-item .box2 {
+  padding: 5px 0px;
+}
+.specialty-item .box2 a {
+  width: 270px;
+  height: 365px;
+  display: inline-block;
+  background: url(../img/city_guide.png) no-repeat;
+}
+.specialty-item .box2 a:hover {
+  opacity: 0.5;
+}
+.specialty-item .box2 a span {
+  color: white;
+  font-size: 50px;
+}
+.specialty-item .box3 {
+  padding: 5px 0px;
+}
+.specialty-item .box3 a {
+  width: 270px;
+  height: 365px;
+  display: inline-block;
+  background: url(../img/tourism_blog.png) no-repeat;
+}
+.specialty-item .box3 a:hover {
+  opacity: 0.5;
+}
+.specialty-item .box3 a span {
+  color: white;
+  font-size: 50px;
+}
+.specialty-item .box4 {
+  padding: 5px 0px;
+}
+.specialty-item .box4 a {
+  width: 270px;
+  height: 365px;
+  display: inline-block;
+  background: url(../img/download_application.png) no-repeat;
+}
+.specialty-item .box4 a:hover {
+  opacity: 0.5;
+}
+.specialty-item h3 {
+  color: white;
+  font-weight: bold;
+}
+.specialty-item p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.link {
+  margin: 10px auto;
+}
+.link .xian {
+  border-top: 1px solid #666;
+  margin: 30px auto;
+}
+.link ul li {
+  float: left;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+.link ul li a {
+  font-size: 14px;
+  color: #666;
+}
+.link ul li a:hover {
   color: white;
 }
 @media (max-width: 768px) {

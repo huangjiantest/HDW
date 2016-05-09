@@ -44,6 +44,11 @@ ul,ol,li{
         }
     }
 }
+.box-a{
+    width: 270px;
+    height: 365px;
+    display: inline-block;
+}
 
 //头部信息
 .header{
@@ -72,7 +77,6 @@ ul,ol,li{
         }
         .search {
             position: relative;
-            border-left: 1px solid #fff;
             float: right;
             background: #DCDCDC;
             input[type="text"] {
@@ -207,6 +211,89 @@ ul,ol,li{
             &:hover{
                 background: #48CFAD;
                 color: white;
+            }
+        }
+    }
+}
+
+.specialty-item{
+    text-align: center;
+    .box1{
+        padding: 5px 0px;
+        a{
+            .box-a;
+            background: url(../img/traveler-choice.png) no-repeat;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    .box2{
+        padding: 5px 0px;
+        a{
+            .box-a;
+            background: url(../img/city_guide.png) no-repeat;
+            &:hover{
+                opacity: 0.5;
+            }
+            span{
+                color: white;
+                font-size: 50px;
+            }
+        }
+    }
+    .box3{
+        padding: 5px 0px;
+        a{
+            .box-a;
+            background: url(../img/tourism_blog.png) no-repeat;
+            &:hover{
+                opacity: 0.5;
+            }
+            span{
+                color: white;
+                font-size: 50px;
+            }
+        }
+    }
+    .box4{
+        padding: 5px 0px;
+        a{
+            .box-a;
+            background: url(../img/download_application.png) no-repeat;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    h3{
+        color: white;
+        font-weight: bold;
+    }
+    p{
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.link{
+    margin: 10px auto;
+    .xian{
+        border-top: 1px solid #666;
+        margin: 30px auto;
+    }
+    ul{
+        li{
+            float: left;
+            padding-bottom: 5px;
+            padding-right: 20px;
+            a{
+                font-size: 14px;
+                color: #666;
+                &:hover{
+                    color: white;
+                }
             }
         }
     }
