@@ -1,0 +1,84 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	}
+body{
+	background:#e9f5f8;
+}
+.row .tit{
+}
+.tit .p{
+	text-indent:25px;
+	font-size: 16px;
+}
+ .row .tit .pict{
+}
+
+ .row .tit .pic{
+ 	float: left;
+	margin:1% 2%;
+	width:63%;
+	
+}
+.row .tit .pic2{
+	margin:1% 2%;
+	width:30%;
+	float: right;
+}
+.meishi{
+	padding: 0px;
+	margin: 3%;
+	padding: 0px;
+}
+.meishi1{
+		border: 1px solid #ccc;
+		float: left;
+		padding: 0px;
+		overflow: hidden;
+		padding: 0px;
+		line-height: 30px;
+		text-indent: 28px;
+}
+.meishi p strong{
+	font-size: 19px;
+	color: #761C19;
+}
+.meishixiaotu{
+	margin-bottom:2px ;
+	width: 100%;
+	overflow: hidden;
+}
+.tab_1{
+	margin: 0px 5%;
+}
+.float{
+	float: right;
+	margin-top:1% ;
+}
+@media (max-width:455px) {
+	.row .tit .pic {
+		width: 360px;
+		margin:2% 1%;
+	}
+}
+@media (max-width:990px) {
+	.row_pic{
+		text-align: center;
+		width: 200%;
+	}
+	.row_pic h2{
+		text-align: left;	
+		text-indent:7%;
+	}
+	.meishi{
+		width: 45%;
+	}
+	.meishi  img {
+		width: 80%;
+		text-align: center;
+	}
+	.meishi1{
+		margin-left:10% ;
+		width: 80%;
+	}
+}
