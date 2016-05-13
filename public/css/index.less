@@ -1,32 +1,34 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-size: 12px;
 }
-body{
+body {
     background: #9ACFEA;
 }
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: black;
 }
-a:hover{
+a:hover {
     text-decoration: none;
 }
-ul,ol,li{
+ul,
+ol,
+li {
     list-style: none;
 }
-
 //定义通用样式
-.color-font_size(@color,@font-size){
+.color-font_size(@color, @font-size) {
     color: @color;
     font-size: @font-size;
 }
-.hend-style{
-    .hend{
+.hend-style {
+    .hend {
         font-weight: bold;
         text-align: center;
-        a{
+        margin-left: -2px;
+        a {
             height: 30px;
             background: white;
             line-height: 30px;
@@ -34,43 +36,53 @@ ul,ol,li{
             font-size: 14px;
             text-decoration: none;
             transition: all 0.3s;
-            &:hover{
+            &:hover {
                 background: #2FB593;
                 color: white;
             }
-            &:visited{
+            &:visited {
                 color: black;
             }
         }
     }
 }
-.box-a{
+.box-a {
     width: 270px;
     height: 365px;
     display: inline-block;
 }
+.fp{
+    figure{
+        p{
+            width: 200px;
+        }
+    }
+    .hend{
+        width: 265px;
+    }
+}
 
 //头部信息
-.header{
-    .logo{
+.header {
+    .logo {
         float: left;
     }
-    .logo-font{
+    .logo-font {
         font-weight: bold;
         line-height: 100px;
         font-size: 14px;
         color: #449D44;
     }
-    .nav-top{
+    .nav-top {
         float: right;
-        ul{
-            li{
+        ul {
+            li {
                 float: left;
                 cursor: pointer;
                 padding: 15px;
                 background: #74adaa;
                 color: white;
-                &:hover{
+                &:hover {
                     background: #ccc;
                 }
             }
@@ -97,11 +109,10 @@ ul,ol,li{
         }
     }
 }
-
 //尾部信息
 .footer {
     width: 90%;
-    margin: 0px auto;
+    margin: 0 auto;
     background: #555;
     &-middle-in {
         float: left;
@@ -134,221 +145,190 @@ ul,ol,li{
         padding: 10px 0;
     }
 }
-
-.nav-title{
+.nav-title {
     margin-top: 20px;
-    .select{
-        .regionTabs{
-            margin-bottom: 20px;
-            box-shadow: 0 1px 5px 1px #e3e2df;
-            border: 1px solid #e3e2df;
-            display: table;
-            li{
-                height: 35px;
-                padding: 4px 15px;
-                line-height: 35px;
-                font-weight: bold;
-                transition: all 0.3s;
-                display: table-cell;
-                cursor: pointer;
-                background: #f4f3f0;
-                border-left: 1px solid #dad7c8;
+    .nav-tabs li{
+        background: #ccc;
+    }
+    .tab-content {
+        margin-left: -13px;
+        .content {
+            .ong-img1 {
+                margin-bottom: 30px;
+                .hend-style;
+            }
+            .ong-img2 {
+                margin-bottom: 30px;
+                .hend-style;
+            }
+            .two-img1 {
+                margin-bottom: 30px;
+                .hend-style;
+            }
+            .two-img2 {
+                margin-bottom: 30px;
+                .hend-style;
+            }
+            .three-img1 {
+                margin-bottom: 30px;
+                .hend-style;
+            }
+            .three-img2 {
+                margin-bottom: 30px;
+                .hend-style;
+            }
+            .p {
                 text-align: center;
-                a{
-                    display: inline-block;
-                    font-size: 16px;
-                    width: 253px;
-                    vertical-align: middle;
-                }
-                &:hover{
-                    background: #dad7c8;
-                    a{
-                        color: #51938f;
+                line-height: 35px;
+                margin-bottom: 20px;
+                a {
+                    display: block;
+                    margin: 0 auto;
+                    width: 50%;
+                    height: 35px;
+                    font-size: 14px;
+                    background: #ccc;
+                    transition: all 0.3s;
+                    &:hover {
+                        background: #48CFAD;
+                        color: white;
                     }
                 }
             }
         }
     }
 }
-
-.content{
-    .ong-img1{
-        margin-bottom: 30px;
-        .hend-style;
-    }
-    .ong-img2{
-        margin-bottom: 30px;
-        .hend-style;
-    }
-    .two-img1{
-        margin-bottom: 30px;
-        .hend-style;
-    }
-    .two-img2{
-        margin-bottom: 30px;
-        .hend-style;
-    }
-    .three-img1{
-        margin-bottom: 30px;
-        .hend-style;
-    }
-    .three-img2{
-        margin-bottom: 30px;
-        .hend-style;
-    }
-    .p{
-        text-align: center;
-        line-height: 35px;
-        margin-bottom: 20px;
-        a{
-            display: block;
-            margin: 0px auto;
-            width: 50%;
-            height: 35px;
-            font-size: 14px;
-            background: #ccc;
-            transition: all 0.3s;
-            &:hover{
-                background: #48CFAD;
-                color: white;
-            }
-        }
-    }
-}
-
-.specialty-item{
+.specialty-item {
     text-align: center;
-    .box1{
-        padding: 5px 0px;
-        a{
+    .box1 {
+        padding: 5px 0;
+        a {
             .box-a;
-            background: url(../img/traveler-choice.png) no-repeat;
-            &:hover{
+            background: url("../img/traveler-choice.png") no-repeat;
+            &:hover {
                 opacity: 0.5;
             }
         }
     }
-    .box2{
-        padding: 5px 0px;
-        a{
+    .box2 {
+        padding: 5px 0;
+        a {
             .box-a;
-            background: url(../img/city_guide.png) no-repeat;
-            &:hover{
+            background: url("../img/city_guide.png") no-repeat;
+            &:hover {
                 opacity: 0.5;
             }
-            span{
+            span {
                 color: white;
                 font-size: 50px;
             }
         }
     }
-    .box3{
-        padding: 5px 0px;
-        a{
+    .box3 {
+        padding: 5px 0;
+        a {
             .box-a;
-            background: url(../img/tourism_blog.png) no-repeat;
-            &:hover{
+            background: url("../img/tourism_blog.png") no-repeat;
+            &:hover {
                 opacity: 0.5;
             }
-            span{
+            span {
                 color: white;
                 font-size: 50px;
             }
         }
     }
-    .box4{
-        padding: 5px 0px;
-        a{
+    .box4 {
+        padding: 5px 0;
+        a {
             .box-a;
-            background: url(../img/download_application.png) no-repeat;
-            &:hover{
+            background: url("../img/download_application.png") no-repeat;
+            &:hover {
                 opacity: 0.5;
             }
         }
     }
-    h3{
+    h3 {
         color: white;
         font-weight: bold;
     }
-    p{
+    p {
         color: white;
         font-size: 16px;
         font-weight: bold;
     }
 }
-
-.link{
+.link {
     margin: 10px auto;
-    .xian{
+    .xian {
         border-top: 1px solid #666;
         margin: 30px auto;
     }
-    ul{
-        li{
+    ul {
+        li {
             float: left;
             padding-bottom: 5px;
             padding-right: 20px;
-            a{
+            a {
                 font-size: 14px;
                 color: #666;
-                &:hover{
+                &:hover {
                     color: white;
                 }
             }
         }
     }
 }
-
 @media (max-width: 768px) {
-    .header .logo img{
+    .header .logo img {
         width: 50px;
         transition: all 0.3s;
     }
-    .header .row .logo-font{
+    .header .row .logo-font {
         line-height: 50px;
         font-size: 12px;
     }
-    .header .row .nav-font{
+    .header .row .nav-font {
         line-height: 150px;
     }
-    .content img{
+    .content img {
         width: 265px;
     }
-    .content .ong-img1 figure p{
-        width: 250px;
+    .content .ong-img1{
+        .fp;
     }
-    .content .ong-img2 figure p{
-        width: 250px;
+    .content .ong-img2{
+        .fp;
     }
-    .content .two-img1 figure p{
-        width: 250px;
+    .content .two-img1{
+        .fp;
     }
-    .content .two-img2 figure p{
-        width: 250px;
+    .content .two-img2{
+        .fp;
     }
-    .content .three-img1 figure p{
-        width: 250px;
+    .content .three-img1{
+        .fp;
     }
-    .content .three-img2 figure p{
-        width: 250px;
+    .content .three-img2{
+        .fp;
     }
-    .nav-title .select .regionTabs li a{
-        width: 35px;
+    .nav-title .nav-tabs li a {
+        width: 64px;
     }
 }
 @media (min-width: 992px) {
-    .header .logo img{
+    .header .logo img {
         width: 100px;
     }
-    .header .row .logo-font{
+    .header .row .logo-font {
         line-height: 100px;
     }
 }
 @media (min-width: 1200px) {
-    .header .logo img{
+    .header .logo img {
         width: 100px;
     }
-    .header .row .logo-font{
+    .header .row .logo-font {
         line-height: 100px;
     }
 }

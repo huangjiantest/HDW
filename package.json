@@ -1,5 +1,5 @@
 {
-  "name": "sea_inland",
+  "name": "xiangmu",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -12,6 +12,10 @@
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
     "eventproxy": "^0.3.4",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "log4js": "^0.6.36",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2"
   }
 }

@@ -1,0 +1,36 @@
+<style type="text/css" id="proList">
+	<div class="panel panel-default">
+	<div class="panel-heading">
+		商品列表
+		<a href="#/proAdd" class="glyphicon glyphicon-plus pull-right">新增商品</a>
+	</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>商品名称</th>
+				<th>商品价格</th>
+				<th>数量</th>
+				<th>商品图片</th>
+				<th>商品分类</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% products.forEach(function(product){ %>
+				<tr>
+					<td><%= product.pid %></td>
+					<td><%= product.pname %></td>
+					<td><%= product.price %></td>
+					<td><%= product.strock %></td>
+					<td><img src="<%= product.img %>" style="height:50px" /></td>
+					<td><%= product.typename %></td>
+					<td>
+						<a href="#/proDel/<%= product.pid %>">删除</a>
+					</td>
+				</tr>
+			<% }) %>
+		</tbody>
+	</table>
+</div>
+</style>

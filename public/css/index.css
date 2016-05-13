@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-size: 12px;
 }
 body {
@@ -21,6 +21,7 @@ li {
 .hend-style .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
 .hend-style .hend a {
   height: 30px;
@@ -42,6 +43,12 @@ li {
   width: 270px;
   height: 365px;
   display: inline-block;
+}
+.fp figure p {
+  width: 200px;
+}
+.fp .hend {
+  width: 265px;
 }
 .header .logo {
   float: left;
@@ -87,7 +94,7 @@ li {
 }
 .footer {
   width: 90%;
-  margin: 0px auto;
+  margin: 0 auto;
   background: #555;
 }
 .footer-middle-in {
@@ -127,44 +134,21 @@ li {
 .nav-title {
   margin-top: 20px;
 }
-.nav-title .select .regionTabs {
-  margin-bottom: 20px;
-  box-shadow: 0 1px 5px 1px #e3e2df;
-  border: 1px solid #e3e2df;
-  display: table;
+.nav-title .nav-tabs li {
+  background: #ccc;
 }
-.nav-title .select .regionTabs li {
-  height: 35px;
-  padding: 4px 15px;
-  line-height: 35px;
-  font-weight: bold;
-  transition: all 0.3s;
-  display: table-cell;
-  cursor: pointer;
-  background: #f4f3f0;
-  border-left: 1px solid #dad7c8;
-  text-align: center;
+.nav-title .tab-content {
+  margin-left: -13px;
 }
-.nav-title .select .regionTabs li a {
-  display: inline-block;
-  font-size: 16px;
-  width: 253px;
-  vertical-align: middle;
-}
-.nav-title .select .regionTabs li:hover {
-  background: #dad7c8;
-}
-.nav-title .select .regionTabs li:hover a {
-  color: #51938f;
-}
-.content .ong-img1 {
+.nav-title .tab-content .content .ong-img1 {
   margin-bottom: 30px;
 }
-.content .ong-img1 .hend {
+.nav-title .tab-content .content .ong-img1 .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
-.content .ong-img1 .hend a {
+.nav-title .tab-content .content .ong-img1 .hend a {
   height: 30px;
   background: white;
   line-height: 30px;
@@ -173,21 +157,22 @@ li {
   text-decoration: none;
   transition: all 0.3s;
 }
-.content .ong-img1 .hend a:hover {
+.nav-title .tab-content .content .ong-img1 .hend a:hover {
   background: #2FB593;
   color: white;
 }
-.content .ong-img1 .hend a:visited {
+.nav-title .tab-content .content .ong-img1 .hend a:visited {
   color: black;
 }
-.content .ong-img2 {
+.nav-title .tab-content .content .ong-img2 {
   margin-bottom: 30px;
 }
-.content .ong-img2 .hend {
+.nav-title .tab-content .content .ong-img2 .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
-.content .ong-img2 .hend a {
+.nav-title .tab-content .content .ong-img2 .hend a {
   height: 30px;
   background: white;
   line-height: 30px;
@@ -196,21 +181,22 @@ li {
   text-decoration: none;
   transition: all 0.3s;
 }
-.content .ong-img2 .hend a:hover {
+.nav-title .tab-content .content .ong-img2 .hend a:hover {
   background: #2FB593;
   color: white;
 }
-.content .ong-img2 .hend a:visited {
+.nav-title .tab-content .content .ong-img2 .hend a:visited {
   color: black;
 }
-.content .two-img1 {
+.nav-title .tab-content .content .two-img1 {
   margin-bottom: 30px;
 }
-.content .two-img1 .hend {
+.nav-title .tab-content .content .two-img1 .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
-.content .two-img1 .hend a {
+.nav-title .tab-content .content .two-img1 .hend a {
   height: 30px;
   background: white;
   line-height: 30px;
@@ -219,21 +205,22 @@ li {
   text-decoration: none;
   transition: all 0.3s;
 }
-.content .two-img1 .hend a:hover {
+.nav-title .tab-content .content .two-img1 .hend a:hover {
   background: #2FB593;
   color: white;
 }
-.content .two-img1 .hend a:visited {
+.nav-title .tab-content .content .two-img1 .hend a:visited {
   color: black;
 }
-.content .two-img2 {
+.nav-title .tab-content .content .two-img2 {
   margin-bottom: 30px;
 }
-.content .two-img2 .hend {
+.nav-title .tab-content .content .two-img2 .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
-.content .two-img2 .hend a {
+.nav-title .tab-content .content .two-img2 .hend a {
   height: 30px;
   background: white;
   line-height: 30px;
@@ -242,21 +229,22 @@ li {
   text-decoration: none;
   transition: all 0.3s;
 }
-.content .two-img2 .hend a:hover {
+.nav-title .tab-content .content .two-img2 .hend a:hover {
   background: #2FB593;
   color: white;
 }
-.content .two-img2 .hend a:visited {
+.nav-title .tab-content .content .two-img2 .hend a:visited {
   color: black;
 }
-.content .three-img1 {
+.nav-title .tab-content .content .three-img1 {
   margin-bottom: 30px;
 }
-.content .three-img1 .hend {
+.nav-title .tab-content .content .three-img1 .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
-.content .three-img1 .hend a {
+.nav-title .tab-content .content .three-img1 .hend a {
   height: 30px;
   background: white;
   line-height: 30px;
@@ -265,21 +253,22 @@ li {
   text-decoration: none;
   transition: all 0.3s;
 }
-.content .three-img1 .hend a:hover {
+.nav-title .tab-content .content .three-img1 .hend a:hover {
   background: #2FB593;
   color: white;
 }
-.content .three-img1 .hend a:visited {
+.nav-title .tab-content .content .three-img1 .hend a:visited {
   color: black;
 }
-.content .three-img2 {
+.nav-title .tab-content .content .three-img2 {
   margin-bottom: 30px;
 }
-.content .three-img2 .hend {
+.nav-title .tab-content .content .three-img2 .hend {
   font-weight: bold;
   text-align: center;
+  margin-left: -2px;
 }
-.content .three-img2 .hend a {
+.nav-title .tab-content .content .three-img2 .hend a {
   height: 30px;
   background: white;
   line-height: 30px;
@@ -288,28 +277,28 @@ li {
   text-decoration: none;
   transition: all 0.3s;
 }
-.content .three-img2 .hend a:hover {
+.nav-title .tab-content .content .three-img2 .hend a:hover {
   background: #2FB593;
   color: white;
 }
-.content .three-img2 .hend a:visited {
+.nav-title .tab-content .content .three-img2 .hend a:visited {
   color: black;
 }
-.content .p {
+.nav-title .tab-content .content .p {
   text-align: center;
   line-height: 35px;
   margin-bottom: 20px;
 }
-.content .p a {
+.nav-title .tab-content .content .p a {
   display: block;
-  margin: 0px auto;
+  margin: 0 auto;
   width: 50%;
   height: 35px;
   font-size: 14px;
   background: #ccc;
   transition: all 0.3s;
 }
-.content .p a:hover {
+.nav-title .tab-content .content .p a:hover {
   background: #48CFAD;
   color: white;
 }
@@ -317,25 +306,25 @@ li {
   text-align: center;
 }
 .specialty-item .box1 {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .specialty-item .box1 a {
   width: 270px;
   height: 365px;
   display: inline-block;
-  background: url(../img/traveler-choice.png) no-repeat;
+  background: url("../img/traveler-choice.png") no-repeat;
 }
 .specialty-item .box1 a:hover {
   opacity: 0.5;
 }
 .specialty-item .box2 {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .specialty-item .box2 a {
   width: 270px;
   height: 365px;
   display: inline-block;
-  background: url(../img/city_guide.png) no-repeat;
+  background: url("../img/city_guide.png") no-repeat;
 }
 .specialty-item .box2 a:hover {
   opacity: 0.5;
@@ -345,13 +334,13 @@ li {
   font-size: 50px;
 }
 .specialty-item .box3 {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .specialty-item .box3 a {
   width: 270px;
   height: 365px;
   display: inline-block;
-  background: url(../img/tourism_blog.png) no-repeat;
+  background: url("../img/tourism_blog.png") no-repeat;
 }
 .specialty-item .box3 a:hover {
   opacity: 0.5;
@@ -361,13 +350,13 @@ li {
   font-size: 50px;
 }
 .specialty-item .box4 {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .specialty-item .box4 a {
   width: 270px;
   height: 365px;
   display: inline-block;
-  background: url(../img/download_application.png) no-repeat;
+  background: url("../img/download_application.png") no-repeat;
 }
 .specialty-item .box4 a:hover {
   opacity: 0.5;
@@ -416,25 +405,43 @@ li {
     width: 265px;
   }
   .content .ong-img1 figure p {
-    width: 250px;
+    width: 200px;
+  }
+  .content .ong-img1 .hend {
+    width: 265px;
   }
   .content .ong-img2 figure p {
-    width: 250px;
+    width: 200px;
+  }
+  .content .ong-img2 .hend {
+    width: 265px;
   }
   .content .two-img1 figure p {
-    width: 250px;
+    width: 200px;
+  }
+  .content .two-img1 .hend {
+    width: 265px;
   }
   .content .two-img2 figure p {
-    width: 250px;
+    width: 200px;
+  }
+  .content .two-img2 .hend {
+    width: 265px;
   }
   .content .three-img1 figure p {
-    width: 250px;
+    width: 200px;
+  }
+  .content .three-img1 .hend {
+    width: 265px;
   }
   .content .three-img2 figure p {
-    width: 250px;
+    width: 200px;
   }
-  .nav-title .select .regionTabs li a {
-    width: 35px;
+  .content .three-img2 .hend {
+    width: 265px;
+  }
+  .nav-title .nav-tabs li a {
+    width: 64px;
   }
 }
 @media (min-width: 992px) {

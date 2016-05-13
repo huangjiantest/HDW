@@ -11,6 +11,13 @@
 		<script src="js/site.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/site.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.box .nav .col-md-3 {
+				padding: 0px;
+				border: 2px solid #0B859C;
+				margin-bottom: 2px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -65,296 +72,859 @@
 		</div>
 		<div class="nav-title">
 			<div class="container">
-				<div class="select">
-					<ul class="regionTabs" id="regionTabs">
-						<li id="yz" class><a href="javascritp:void(0);">亚洲</a></li>
-						<li id="oz" class><a href="javascritp:void(0);">欧洲</a></li>
-						<li id="mz" class><a href="javascritp:void(0);">美洲</a></li>
-						<li id="qq" class><a href="javascritp:void(0);">全球</a></li>
+				<div class="box">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active col-md-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">亚洲</a></li>
+						<li role="presentation" class="col-md-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">欧洲</a></li>
+						<li role="presentation" class="col-md-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">美洲</a></li>
+						<li role="presentation" class="col-md-3"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">全球</a></li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="home">
+							<div class="content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="ong-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModal">
+													<figure class="effect-zoe">
+														<img src="img/bld/bld-title.png" />
+														<figcaption>
+															<h2>巴厘岛 <span>印度尼西亚</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">巴厘岛白色沙滩上的水域是浅水的理想之地。这里丛林茂密，有许多猴子，还有许多隐蔽的石庙，都等着你来探索。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">巴厘岛</a></p>
+											</div>
+											<div class="ong-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa2">
+													<figure class="effect-zoe">
+														<img src="img/sbd/sbd-title.png" />
+														<figcaption>
+															<h2>塞班岛 <span>马里亚纳</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">东西岸拥有不同的迷人景色，西案沙滩绵延，东岸岩石断崖，绚丽的海底世界，热带丛林探险，刺激的水上娱乐活动。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">塞班岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="two-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa3">
+													<figure class="effect-zoe">
+														<img src="img/jzd/jzd-title.png" />
+														<figcaption>
+															<h2>济州岛 <span>韩国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">济州岛有浪漫的日出和夕照，气候温和，还有美丽的沙滩，有许多人都会选择来此度蜜月。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">济州岛</a></p>
+											</div>
+											<div class="two-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa4">
+													<figure class="effect-zoe">
+														<img src="img/lsd/lsd-title.png" />
+														<figcaption>
+															<h2>吕宋岛 <span>菲律宾</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">平原较少，以中西部中央平原和东南部比科尔平原为最大，还有一些海岸平原和河谷低地。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">吕宋岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="three-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa5">
+													<figure class="effect-zoe">
+														<img src="img/pjd/pjd-title.png" />
+														<figcaption>
+															<h2>普吉岛 <span>泰国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">从蓝色的泻湖到粉色的落日再到穿着橙色长袍的僧侣，普吉岛 (Phuket) 为游客提供彩虹般缤纷的壮观度假美景。 三轮摩托车、出租车、巴士和长尾船载着游客在这些美景间穿行。 </p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">普吉岛</a></p>
+											</div>
+											<div class="three-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa6">
+													<figure class="effect-zoe">
+														<img src="img/medf/medf-title.png" />
+														<figcaption>
+															<h2>马尔代夫 <span>马尔代夫</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">这是在印度洋周围一群田园般的岛屿，绿松石般的泻湖，水下珊瑚花园，随风摇曳的棕榈叶和美丽的白色沙滩使这里称为赤道上的天堂。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">马尔代夫群岛</a></p>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="p">
+											<a href="javascritp:void(0);">查看全部目的地</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="profile">
+							<div class="content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="ong-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa7">
+													<figure class="effect-zoe">
+														<img src="img/bd/bd-title.png" />
+														<figcaption>
+															<h2>冰岛 <span>冰岛</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">冰岛地处大西洋中脊上，是一个多火山、地质活动频繁的国家。内陆主要是平原地貌，境内多分布沙质地、冷却的熔岩平原和冰川。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">冰岛</a></p>
+											</div>
+											<div class="ong-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa8">
+													<figure class="effect-zoe">
+														<img src="img/bldd/bldd-title.png" />
+														<figcaption>
+															<h2>大不列颠岛 <span>英国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">周围诸海受北大西洋暖流的影响，冬不结冰.</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">大不列颠岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="two-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa9">
+													<figure class="effect-zoe">
+														<img src="img/sdd/sdd-title.png" />
+														<figcaption>
+															<h2>撒丁岛 <span>意大利</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">地中海夏旱灌木群落，包括爱神木，野生百里香，刺梨和矮橡树</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">撒丁岛</a></p>
+											</div>
+											<div class="two-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa10">
+													<figure class="effect-zoe">
+														<img src="img/kxjd/kxjd-title.png" />
+														<figcaption>
+															<h2>科西嘉岛 <span>法国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">山体为花岗岩结构，岩体呈绯红、玫瑰和绛红色。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">科西嘉岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="three-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa11">
+													<figure class="effect-zoe">
+														<img src="img/med/med-title.png" />
+														<figcaption>
+															<h2>马恩岛 <span>英国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">岛上地形基本以丘陵为主，很少成片的平原，临海处会有些低缓地带。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">马恩岛</a></p>
+											</div>
+											<div class="three-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa12">
+													<figure class="effect-zoe">
+														<img src="img/aeld/aeld-title.png" />
+														<figcaption>
+															<h2>爱尔兰岛 <span>英国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">全岛被一片苍翠碧绿的林木所笼罩，所以人们都习惯地称其为“绿宝石岛”。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">爱尔兰岛</a></p>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="p">
+											<a href="javascritp:void(0);">查看全部目的地</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="messages">
+							<div class="content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="ong-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModal3">
+													<figure class="effect-zoe">
+														<img src="img/xwy/xwy-title.png" />
+														<figcaption>
+															<h2>夏威夷群岛 <span>美国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">这里全年风和日丽，适宜游泳，冲浪，是风靡全球的旅游胜地。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">夏威夷群岛</a></p>
+											</div>
+											<div class="ong-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa14">
+													<figure class="effect-zoe">
+														<img src="img/ymj/ymjd-title.png" />
+														<figcaption>
+															<h2>牙买加岛 <span>牙买加</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">这里到外有丰满的水草，淙淙的泉水。在印第安人阿拉瓦克族的语言中，“牙买加”就是“泉水之岛”的意思。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">牙买加岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="two-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa15">
+													<figure class="effect-zoe">
+														<img src="img/hd/hdd-title.png" />
+														<figcaption>
+															<h2>海地岛 <span>海地</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">地势崎岖，系北美洲科迪勒拉山系的延伸，自北向南分别为北科迪勒拉山脉、中科迪勒拉山脉和南部山地，间隔肥沃的平原、低地。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">海地岛</a></p>
+											</div>
+											<div class="two-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa16">
+													<figure class="effect-zoe">
+														<img src="img/gbd/gbd-title.png" />
+														<figcaption>
+															<h2>古巴岛 <span>古巴</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">由古巴岛和青年岛（原松树岛）等1600多个岛屿组成。是西印度群岛中最大的岛国。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">古巴岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="three-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa17">
+													<figure class="effect-zoe">
+														<img src="img/bhm/bhm-title.png" />
+														<figcaption>
+															<h2>巴哈马群岛 <span>巴哈马</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">巴哈马群岛大部分的地区都属温和的亚热带气候，北回归线横贯中部。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">巴哈马群岛</a></p>
+											</div>
+											<div class="three-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa18">
+													<figure class="effect-zoe">
+														<img src="img/swstqd/swst-title.png" />
+														<figcaption>
+															<h2>圣文森特岛 <span>圣文森特和格林纳丁斯</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">圣文森特和格林纳丁斯由主岛圣文森特和格林纳丁斯岛等组成，为火山岛国。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">圣文森特和格林纳丁斯</a></p>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="p">
+											<a href="javascritp:void(0);">查看全部目的地</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="settings">
+							<div class="content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="ong-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModal9">
+													<figure class="effect-zoe">
+														<img src="img/bld/bld-title.png" />
+														<figcaption>
+															<h2>巴厘岛 <span>印度尼西亚</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">巴厘岛白色沙滩上的水域是浅水的理想之地。这里丛林茂密，有许多猴子，还有许多隐蔽的石庙，都等着你来探索。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">巴厘岛</a></p>
+											</div>
+											<div class="ong-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa20">
+													<figure class="effect-zoe">
+														<img src="img/bd/bd-title.png" />
+														<figcaption>
+															<h2>冰岛 <span>冰岛</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">冰岛地处大西洋中脊上，是一个多火山、地质活动频繁的国家。内陆主要是平原地貌，境内多分布沙质地、冷却的熔岩平原和冰川。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">冰岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="two-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa21">
+													<figure class="effect-zoe">
+														<img src="img/xwy/xwy-title.png" />
+														<figcaption>
+															<h2>夏威夷群岛 <span>美国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">这里全年风和日丽，适宜游泳，冲浪，是风靡全球的旅游胜地。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">夏威夷群岛</a></p>
+											</div>
+											<div class="two-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa22">
+													<figure class="effect-zoe">
+														<img src="img/gbd/gbd-title.png" />
+														<figcaption>
+															<h2>古巴岛 <span>古巴</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">由古巴岛和青年岛（原松树岛）等1600多个岛屿组成。是西印度群岛中最大的岛国。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">古巴群岛</a></p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="three-img1">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa23">
+													<figure class="effect-zoe">
+														<img src="img/pjd/pjd-title.png" />
+														<figcaption>
+															<h2>普吉岛 <span>泰国</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">从蓝色的泻湖到粉色的落日再到穿着橙色长袍的僧侣，普吉岛 (Phuket) 为游客提供彩虹般缤纷的壮观度假美景。 三轮摩托车、出租车、巴士和长尾船载着游客在这些美景间穿行。 </p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">普吉岛</a></p>
+											</div>
+											<div class="three-img2">
+												<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa24">
+													<figure class="effect-zoe">
+														<img src="img/medf/medf-title.png" />
+														<figcaption>
+															<h2>马尔代夫 <span>马尔代夫</span></h2>
+															<span href="#" class="icon-heart"></span>
+															<span href="#" class="icon-eye"></span>
+															<span href="#" class="icon-paper-clip"></span>
+															<p style="font-weight: bold;">这是在印度洋周围一群田园般的岛屿，绿松石般的泻湖，水下珊瑚花园，随风摇曳的棕榈叶和美丽的白色沙滩使这里称为赤道上的天堂。</p>
+														</figcaption>
+													</figure>
+												</a>
+												<p class="hend"><a href="#">马尔代夫群岛</a></p>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="p">
+											<a href="javascritp:void(0);">查看全部目的地</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="specialty-item">
+				<div class="container">
+					<div class="col-md-3 col-xs-12 col-sm-6 box1">
+						<a href="javascritp:void(0);">
+							<h3 style="margin-top: 150px;border-top: 2px solid white;border-bottom: 2px solid white;padding: 10px;">2016年&nbsp;旅行者之选</h3>
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-12 col-sm-6 box2">
+						<a href="javascritp:void(0);">
+							<span class="glyphicon glyphicon-tasks" style="margin-top: 150px;"></span>
+							<h3 class="">一切精华,尽在掌握</h3>
+							<p>寻找处境必备的自助游指南></p>
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-12 col-sm-6 box3">
+						<a href="javascritp:void(0);">
+							<span class="glyphicon glyphicon-list" style="margin-top: 150px;"></span>
+							<h3>玩法大不同</h3>
+							<p>寻找最适合你的旅游攻略></p>
+						</a>
+					</div>
+					<div class="col-md-3 col-xs-12 col-sm-6 box4">
+						<a href="javascritp:void(0);">
+							<h3 style="margin-top: 50px;">手机APP</h3>
+							<p>随时随地查找当地周边信息</br>好吃好玩一网打尽!</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="link">
+				<div class="container">
+					<div class="xian"></div>
+					<h3>热门旅游目的地</h3>
+					<ul>
+						<li><a href="javascritp:void(0);">斯里兰卡旅游</a></li>
+						<li><a href="javascritp:void(0);">印度尼西亚旅游</a></li>
+						<li><a href="javascritp:void(0);">新西兰旅游</a></li>
+						<li><a href="javascritp:void(0);">马尔代夫旅游</a></li>
+						<li><a href="javascritp:void(0);">毛里求斯旅游</a></li>
+					</ul>
+					<div class="clearfix"></div>
+					<h3>友情链接</h3>
+					<ul>
+						<li><a href="http://flight.qunar.com/">去哪儿网机票</a></li>
+						<li><a href="http://www.tuniu.com/">途牛旅游网</a></li>
+						<li><a href="http://www.ly.com/">同程旅游</a></li>
+						<li><a href="http://www.mafengwo.cn/">蚂蜂窝自由行</a></li>
+						<li><a href="http://www.cits.cn/">国旅在线</a></li>
+						<li><a href="http://www.ch.com/">春秋航空</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="ong-img1">
-							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModal">
-								<figure class="effect-zoe">
-									<img src="img/bld/bld-title.png" />
-									<figcaption>
-										<h2>巴厘岛 <span>印度尼西亚</span></h2>
-										<span href="#" class="icon-heart"></span>
-										<span href="#" class="icon-eye"></span>
-										<span href="#" class="icon-paper-clip"></span>
-										<p style="font-weight: bold;">巴厘岛白色沙滩上的水域是浅水的理想之地。这里丛林茂密，有许多猴子，还有许多隐蔽的石庙，都等着你来探索。</p>
-									</figcaption>
-								</figure>
-							</a>
-							<p class="hend"><a href="#">巴厘岛</a></p>
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-xs-12">
+							<div class="footer-middle-in">
+								<h3>关于我们</h3>
+								<p>本站只是用于介绍海岛景点，不支持飞机订票，酒店订约等服务，感谢你们对我们的关注。</p>
+							</div>
 						</div>
-						<div class="ong-img2">
-							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa2">
-								<figure class="effect-zoe">
-									<img src="img/sbd/sbd-title.png" />
-									<figcaption>
-										<h2>塞班岛 <span>马里亚纳</span></h2>
-										<span href="#" class="icon-heart"></span>
-										<span href="#" class="icon-eye"></span>
-										<span href="#" class="icon-paper-clip"></span>
-										<p style="font-weight: bold;">东西岸拥有不同的迷人景色，西案沙滩绵延，东岸岩石断崖，绚丽的海底世界，热带丛林探险，刺激的水上娱乐活动。</p>
-									</figcaption>
-								</figure>
-							</a>
-							<p class="hend"><a href="#">塞班岛</a></p>
+						<div class="col-md-3 col-xs-12">
+							<div class="footer-middle-in">
+								<h3>信息</h3>
+								<ul>
+									<li><a href="javascritp:void(0);">关于我们</a></li>
+									<li><a href="javascritp:void(0);">常见问题</a></li>
+									<li><a href="javascritp:void(0);">隐私政策</a></li>
+									<li><a href="javascritp:void(0);">条款条件</a></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="two-img1">
-							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa3">
-								<figure class="effect-zoe">
-									<img src="img/jzd/jzd-title.png" />
-									<figcaption>
-										<h2>济州岛 <span>韩国</span></h2>
-										<span href="#" class="icon-heart"></span>
-										<span href="#" class="icon-eye"></span>
-										<span href="#" class="icon-paper-clip"></span>
-										<p style="font-weight: bold;">济州岛有浪漫的日出和夕照，气候温和，还有美丽的沙滩，有许多人都会选择来此度蜜月。</p>
-									</figcaption>
-								</figure>
-							</a>
-							<p class="hend"><a href="#">济州岛</a></p>
+						<div class="col-md-3 col-xs-12">
+							<div class="footer-middle-in">
+								<h3>客户服务</h3>
+								<ul>
+									<li><a href="content.html">联系我们</a></li>
+									<li><a href="javascritp:void(0);">意见反馈</a></li>
+									<li><a href="javascritp:void(0);">站点地图</a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="two-img2">
-							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa4">
-								<figure class="effect-zoe">
-									<img src="img/xwy/xwy-title.png" />
-									<figcaption>
-										<h2>夏威夷 <span>美国</span></h2>
-										<span href="#" class="icon-heart"></span>
-										<span href="#" class="icon-eye"></span>
-										<span href="#" class="icon-paper-clip"></span>
-										<p style="font-weight: bold;">这里全年风和日丽，适宜游泳，冲浪，是风靡全球的旅游胜地。</p>
-									</figcaption>
-								</figure>
-							</a>
-							<p class="hend"><a href="#">夏威夷群岛</a></p>
+						<div class="col-md-2 col-xs-12">
+							<div class="footer-middle-in">
+								<p style="padding-left: 20px;">关注微信</p>
+								<img src="img/weixin.jpg" />
+								<p>扫一扫，即可开启你的梦幻之旅</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="three-img1">
-							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa5">
-								<figure class="effect-zoe">
-									<img src="img/pjd/pjd-title.png" />
-									<figcaption>
-										<h2>普吉岛 <span>泰国</span></h2>
-										<span href="#" class="icon-heart"></span>
-										<span href="#" class="icon-eye"></span>
-										<span href="#" class="icon-paper-clip"></span>
-										<p style="font-weight: bold;">从蓝色的泻湖到粉色的落日再到穿着橙色长袍的僧侣，普吉岛 (Phuket) 为游客提供彩虹般缤纷的壮观度假美景。 三轮摩托车、出租车、巴士和长尾船载着游客在这些美景间穿行。 </p>
-									</figcaption>
-								</figure>
-							</a>
-							<p class="hend"><a href="#">普吉岛</a></p>
-						</div>
-						<div class="three-img2">
-							<a href="javascritp:void(0);" data-toggle="modal" data-target="#myModa6">
-								<figure class="effect-zoe">
-									<img src="img/medf/medf-title.png" />
-									<figcaption>
-										<h2>马尔代夫 <span>马尔代夫</span></h2>
-										<span href="#" class="icon-heart"></span>
-										<span href="#" class="icon-eye"></span>
-										<span href="#" class="icon-paper-clip"></span>
-										<p style="font-weight: bold;">这是在印度洋周围一群田园般的岛屿，绿松石般的泻湖，水下珊瑚花园，随风摇曳的棕榈叶和美丽的白色沙滩使这里称为赤道上的天堂。</p>
-									</figcaption>
-								</figure>
-							</a>
-							<p class="hend"><a href="#">马尔代夫群岛</a></p>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="p">
-						<a href="javascritp:void(0);">查看全部目的地</a>
 					</div>
 				</div>
+				<p class="footer-class">Copyright © 2016.04 &nbsp;一切解释权归我所有 </p>
 			</div>
-		</div>
-		<div class="specialty-item">
-			<div class="container">
-				<div class="col-md-3 col-xs-12 col-sm-6 box1">
-					<a href="javascritp:void(0);">
-						<h3 style="margin-top: 150px;border-top: 2px solid white;border-bottom: 2px solid white;padding: 10px;">2016年&nbsp;旅行者之选</h3>
-					</a>
-				</div>
-				<div class="col-md-3 col-xs-12 col-sm-6 box2">
-					<a href="javascritp:void(0);">
-						<span class="glyphicon glyphicon-tasks" style="margin-top: 150px;"></span>
-						<h3 class="">一切精华,尽在掌握</h3>
-						<p>寻找处境必备的自助游指南></p>
-					</a>
-				</div>
-				<div class="col-md-3 col-xs-12 col-sm-6 box3">
-					<a href="javascritp:void(0);">
-						<span class="glyphicon glyphicon-list" style="margin-top: 150px;"></span>
-						<h3>玩法大不同</h3>
-						<p>寻找最适合你的旅游攻略></p>
-					</a>
-				</div>
-				<div class="col-md-3 col-xs-12 col-sm-6 box4">
-					<a href="javascritp:void(0);">
-						<h3 style="margin-top: 50px;">手机APP</h3>
-						<p>随时随地查找当地周边信息</br>好吃好玩一网打尽!</p>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="link">
-			<div class="container">
-				<div class="xian"></div>
-				<h3>热门旅游目的地</h3>
-				<ul>
-					<li><a href="javascritp:void(0);">斯里兰卡旅游</a></li>
-					<li><a href="javascritp:void(0);">印度尼西亚旅游</a></li>
-					<li><a href="javascritp:void(0);">新西兰旅游</a></li>
-					<li><a href="javascritp:void(0);">马尔代夫旅游</a></li>
-					<li><a href="javascritp:void(0);">毛里求斯旅游</a></li>
-				</ul>
-				<div class="clearfix"></div>
-				<h3>友情链接</h3>
-				<ul>
-					<li><a href="http://flight.qunar.com/">去哪儿网机票</a></li>
-					<li><a href="http://www.tuniu.com/">途牛旅游网</a></li>
-					<li><a href="http://www.ly.com/">同程旅游</a></li>
-					<li><a href="http://www.mafengwo.cn/">蚂蜂窝自由行</a></li>
-					<li><a href="http://www.cits.cn/">国旅在线</a></li>
-					<li><a href="http://www.ch.com/">春秋航空</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-xs-12">
-						<div class="footer-middle-in">
-							<h3>关于我们</h3>
-							<p>本站只是用于介绍海岛景点，不支持飞机订票，酒店订约等服务，感谢你们对我们的关注。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-12">
-						<div class="footer-middle-in">
-							<h3>信息</h3>
-							<ul>
-								<li><a href="javascritp:void(0);">关于我们</a></li>
-								<li><a href="javascritp:void(0);">常见问题</a></li>
-								<li><a href="javascritp:void(0);">隐私政策</a></li>
-								<li><a href="javascritp:void(0);">条款条件</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-12">
-						<div class="footer-middle-in">
-							<h3>客户服务</h3>
-							<ul>
-								<li><a href="content.html">联系我们</a></li>
-								<li><a href="javascritp:void(0);">意见反馈</a></li>
-								<li><a href="javascritp:void(0);">站点地图</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-2 col-xs-12">
-						<div class="footer-middle-in">
-							<p style="padding-left: 20px;">关注微信</p>
-							<img src="img/weixin.jpg" />
-							<p>扫一扫，即可开启你的梦幻之旅</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p class="footer-class">Copyright © 2016.04 &nbsp;一切解释权归我所有 </p>
-		</div>
 
-		<!--模态框-->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
-					<div class="modal-header" style="border: none;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<img src="img/bld/bld.png">
-					<div class="modal-footer" style="border: none;">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
-					<div class="modal-header" style="border: none;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<img src="img/sbd/sbd.png">
-					<div class="modal-footer" style="border: none;">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<!--模态框1-->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/bld/bld.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
-					<div class="modal-header" style="border: none;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<img src="img/jzd/jzd.png">
-					<div class="modal-footer" style="border: none;">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
-					<div class="modal-header" style="border: none;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<img src="img/xwy/xwy.png">
-					<div class="modal-footer" style="border: none;">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/sbd/sbd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="modal fade" id="myModa5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
-					<div class="modal-header" style="border: none;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<img src="img/pjd/pjd.png">
-					<div class="modal-footer" style="border: none;">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="myModa6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
-					<div class="modal-header" style="border: none;">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<img src="img/medf/medf.png">
-					<div class="modal-footer" style="border: none;">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/jzd/jzd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
+			<div class="modal fade" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/lsd/lsd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/pjd/pjd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/medf/medf.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--模态框2-->
+			<div class="modal fade" id="myModa7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/bd/bd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/bldd/bldd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/sdd/sdd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/kxjd/kxjd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/med/med.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/aeld/aeld.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--模态框3-->
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/xwy/xwy.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/ymj/ymjd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/hd/hdd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/gbd/gbd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/bhm/bhm.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/swstqd/swst.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--模态框4-->
+			<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/bld/bld.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/bd/bd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/xwy/xwy.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/gbd/gbd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/pjd/pjd.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="myModa24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+						<div class="modal-header" style="border: none;">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<img src="img/medf/medf.png">
+						<div class="modal-footer" style="border: none;">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
 	</body>
 
 </html>
