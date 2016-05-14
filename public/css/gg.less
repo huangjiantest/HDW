@@ -4,37 +4,37 @@
 }
 
 //头部信息
-.header{
-    .logo{
+.header {
+    .logo {
         float: left;
     }
-    .logo-font{
+    .logo-font {
         font-weight: bold;
         line-height: 100px;
         font-size: 14px;
-        color: #419641;
+        color: #449D44;
     }
-    .nav-top{
+    .nav-top {
         float: right;
-        ul{
-            li{
+        ul {
+            li {
+                list-style: none;
                 float: left;
                 cursor: pointer;
                 padding: 15px;
                 background: #74adaa;
                 color: white;
-                &:hover{
+                &:hover {
                     background: #ccc;
                 }
             }
         }
         .search {
             position: relative;
-            border-left: 1px solid #fff;
             float: right;
             background: #DCDCDC;
             input[type="text"] {
-                width: 284px;
+                width: 262px;
                 border: none;
                 padding: 10px 20px;
                 background: none;
@@ -51,11 +51,10 @@
         }
     }
 }
-
 //尾部信息
 .footer {
     width: 90%;
-    margin: 0px auto;
+    margin: 0 auto;
     background: #555;
     &-middle-in {
         float: left;
@@ -86,5 +85,43 @@
         text-align: center;
         .color-font_size(white,16px);
         padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo img {
+        width: 50px;
+        transition: all 0.3s;
+    }
+    .header .row .logo-font {
+        line-height: 48px;
+        font-size: 16px;
+    }
+    .header .row .nav-font {
+        line-height: 150px;
+    }
+    .header .row .nav-top{
+        ul {
+            width: 285px;
+        }
+    }
+    #tianqi{
+        margin-right: -10px;
+    }
+}
+@media (min-width: 992px) {
+    .header .logo img {
+        width: 100px;
+    }
+    .header .row .logo-font {
+        line-height: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .header .logo img {
+        width: 100px;
+    }
+    .header .row .logo-font {
+        line-height: 100px;
     }
 }

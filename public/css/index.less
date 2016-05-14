@@ -52,6 +52,7 @@ li {
     display: inline-block;
 }
 .fp{
+    margin-left: -15px;
     figure{
         p{
             width: 200px;
@@ -62,91 +63,59 @@ li {
     }
 }
 
-//头部信息
-.header {
-    .logo {
-        float: left;
-    }
-    .logo-font {
-        font-weight: bold;
-        line-height: 100px;
-        font-size: 14px;
-        color: #449D44;
-    }
-    .nav-top {
-        float: right;
-        ul {
-            li {
-                float: left;
-                cursor: pointer;
-                padding: 15px;
-                background: #74adaa;
-                color: white;
-                &:hover {
-                    background: #ccc;
-                }
-            }
-        }
-        .search {
-            position: relative;
-            float: right;
-            background: #DCDCDC;
-            input[type="text"] {
-                width: 261px;
-                border: none;
-                padding: 10px 20px;
-                background: none;
-            }
-            input[type="submit"] {
-                border: none;
-                position: absolute;
-                right: 0;
-                top: 0;
-                background: url("../img/img-sprite.png") no-repeat -5px -8px;
-                width: 30px;
-                height: 35px;
-            }
-        }
-    }
+
+.box .nav .col-md-3 {
+    padding: 0px;
+    border: 2px solid #0B859C;
+    margin-bottom: 2px;
 }
-//尾部信息
-.footer {
-    width: 90%;
-    margin: 0 auto;
-    background: #555;
-    &-middle-in {
-        float: left;
-        padding: 10px 0;
-        h3 {
-            .color-font_size(white,20px);
-            padding: 2px 0 2px 2px;
-            display: block;
-        }
-        p {
-            .color-font_size(#989494,14px);
-            line-height: 16px;
-            width: 80%;
-            transform: all 0.5s;
-        }
-        li a {
-            .color-font_size(#989494,14px);
-            line-height: 22px;
-            transition: all 0.5s;
-            &:hover {
-                text-decoration: none;
-                color: #5CB85C;
-            }
-        }
-    }
-    &-class {
-        background: #51938f;
+#sanjiaoxing{
+    width: 0px;
+    height: 0px;
+    border-width: 18px;
+    border-color: transparent gold transparent transparent;
+    border-style: dashed solid dashed dashed;
+    position: absolute;
+    right: 72px;
+    top: 15px;
+}
+.ranking {
+    position: absolute;
+    width: 76px;
+    height: 36px;
+    right: -3px;
+    top: 15px;
+    line-height: 38px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Krungthep,"Microsoft YaHei",arial;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    background: gold;
+}
+.banner{
+    margin-top: -20px;
+    position: relative;
+    .little-box{
+        width: 150px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        font-size: 20px;
+        background: orangered;
+        color: white;
+        font-weight: bold;
         text-align: center;
-        .color-font_size(white,16px);
-        padding: 10px 0;
+        line-height: 50px;
+        cursor: pointer;
+        &:hover{
+            background:green;
+        }
     }
 }
 .nav-title {
-    margin-top: 20px;
     .nav-tabs li{
         background: #ccc;
     }
@@ -280,16 +249,19 @@ li {
     }
 }
 @media (max-width: 768px) {
-    .header .logo img {
-        width: 50px;
-        transition: all 0.3s;
-    }
-    .header .row .logo-font {
-        line-height: 50px;
-        font-size: 12px;
-    }
-    .header .row .nav-font {
-        line-height: 150px;
+    .banner{
+        .little-box{
+            width: 70px;
+            height: 20px;
+            font-size: 12px;
+            line-height: 20px;
+            position: absolute;
+            top: 20px;
+            left: 170px;
+        }
+        img{
+            margin-left: -9px;
+        }
     }
     .content img {
         width: 265px;
@@ -312,23 +284,17 @@ li {
     .content .three-img2{
         .fp;
     }
-    .nav-title .nav-tabs li a {
-        width: 64px;
+    .nav-title .nav-tabs li{
+        margin-left: -10px;
+        a {
+            width: 61px;
+        }
+    } 
+    .specialty-item{
+        margin-left: -14px;
     }
 }
 @media (min-width: 992px) {
-    .header .logo img {
-        width: 100px;
-    }
-    .header .row .logo-font {
-        line-height: 100px;
-    }
 }
 @media (min-width: 1200px) {
-    .header .logo img {
-        width: 100px;
-    }
-    .header .row .logo-font {
-        line-height: 100px;
-    }
 }
