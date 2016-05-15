@@ -5,14 +5,17 @@
 body{
 	background:#e9f5f8;
 }
+
+.float{
+	margin-top: 1%;
+}
 .row .tit{
 }
 .tit .p{
 	text-indent:25px;
 	font-size: 16px;
 }
- .row .tit .pict{
-}
+
 
  .row .tit .pic{
  	float: left;
@@ -47,19 +50,40 @@ body{
 	margin-bottom:2px ;
 	width: 100%;
 	overflow: hidden;
+	
 }
 .tab_1{
 	margin: 0px 5%;
 }
-.float{
-	float: right;
-	margin-top:1% ;
-}
+.gallery{
+      list-style: none;
+    }
+
+    .gallery li{
+        zoom: 1;
+        box-shadow: 0 2px 2px rgba(0,0,0,.1);
+        transition: all .3s ease;        
+    }
+
+    .gallery :hover li:not(:hover){    
+    	-webkit-filter: blur(2px) grayscale(1);
+        -moz-filter: blur(2px) grayscale(1);
+        -o-filter: blur(2px) grayscale(1);
+        -ms-filter: blur(2px) grayscale(1);   
+        filter: blur(2px) grayscale(1) ;
+        opacity: .7; /* fallback */      
+       
+    }
+     .gallery:hover .row_pic  .meishixiaotu .meishi1 p strong{
+     	color:green;
+     }
+
 @media (max-width:455px) {
 	.row .tit .pic {
 		width: 360px;
 		margin:2% 1%;
 	}
+	
 }
 @media (max-width:990px) {
 	.row_pic{

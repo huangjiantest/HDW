@@ -8,6 +8,7 @@
 		<title>saisheer</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/fengjing.css" />
+		<link rel="stylesheet" type="text/css" href="css/gg.css"/>
 		<!--[if lt IE 9]>
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -15,6 +16,56 @@
 	</head>
 
 	<body>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-xs-12 col-sm-7 col-lg-6">
+						<div class="logo">
+							<img src="img/logo.png" width="100px" />
+							<img src="img/logo_font.png" width="100px" />
+						</div>
+						<p class="logo-font">海滩,海浪,阳光,浪漫的情怀</p>
+					</div>
+					<div class="col-md-5 col-xs-12 col-sm-5 col-lg-6">
+						<div class="nav-top">
+							<ul>
+								<li>关注我们</li>
+								<li>活动</li>
+								<li>下载App</li>
+								<li><a href="login.html" style="color: white;">登录</a></li>
+							</ul>
+							<div class="search">
+								<form action="" method="post">
+									<input type="text" placeholder="请输入海岛名称···" />
+									<input type="submit" value="" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-nav">
+				<nav class="navbar">
+					<div class="container">
+						<ul class="nav navbar-nav nav-me unstyled">
+							<li><a href="index.html" class="three-d active">首页<span class="three-d-box"><span class="front">首页</span><span class="back">首页</span></span></a></li>
+							<li><a href="#" class="three-d">海岛景点<span class="three-d-box"><span class="front">海岛景点</span><span class="back">海岛景点</span></span></a></li>
+							<li><a href="#" class="three-d">美食介绍<span class="three-d-box"><span class="front">美食介绍</span><span class="back">美食介绍</span></span></a></li>
+							<li><a href="#" class="three-d">旅游攻略<span class="three-d-box"><span class="front">旅游攻略</span><span class="back">旅游攻略</span></span></a></li>
+							<li><a href="content.html" class="three-d">联系我们<span class="three-d-box"><span class="front">联系我们</span><span class="back">联系我们</span></span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="container">
+				<div class="row">
+					<img src="img/banner.gif" width="100%" />
+				</div>
+			</div>
+		</div>
+		<!--内容-->
 		<div class="container-fluid">
 			<div class="row">
 
@@ -48,12 +99,13 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
+					<ul class="gallery">
 					<div class="row row_pic">
 						<h2>塞舌尔特色美食</h2>
 						<div class="col-md-3 col-xs-3 meishi">
 							<div class="meishixiaotu">
-								<img src="img/lys/1-4-3.jpg" width="100%" />
-							</div>
+								<li><img src="img/lys/1-4-3.jpg" width="100%" />
+							</li></div>
 							
 							<div class="meishi1">
 								<p><strong>石斑鱼</strong>蛋白质的含量高，而脂肪含量低，除含人体代谢所必须的氨基酸外，还富含多种无机盐和铁、钙、磷以及各种维生素；鱼皮胶质的营养成分，对增强上皮组织的完整生长和促进胶原细胞的合成有重要作用，被称为美容护肤之鱼。尤其适合妇女产后食用。</p>
@@ -61,8 +113,8 @@
 						</div>
 						<div class="col-md-3 col-xs-3 meishi">
 							<div class="meishixiaotu">
-							<img src="img/lys/1-4-5.jpg" width="100%" />
-							</div>
+							<li><img src="img/lys/1-4-5.jpg" width="100%" />
+							</li></div>
 							<div class="meishi1 ">
 
 								<p><strong>龙虾</strong>国外的做法和国内的不太一样，一般是吃龙虾肉，可配饭和面吃，口味多，肉质鲜。龙虾的蛋白质含量高于大多数的淡水和海水鱼虾，其氨基酸组成优于肉类，含有人体所必需的而体内又不能合成或合成量不足的8种必需氨基酸，还含有对幼儿而言也是必需的组氨酸。</p>
@@ -70,8 +122,8 @@
 						</div>
 						<div class="col-md-3  col-xs-3 meishi">
 							<div class="meishixiaotu">
-							<img src="img/lys/1-4-4.jpg" width="100%" />
-							</div>
+							<li><img src="img/lys/1-4-4.jpg" width="100%" />
+							</li></div>
 							<div class="meishi1">
 
 								<p><strong>红鲷鱼</strong>提取的可溶性胶原蛋白，具有极高的细胞黏结性、高保湿性及良好的感官性能，且活性高易吸收，无臭透明，不产生刺激性。尤其是北海道现存量很有限的史前红鲷鱼，使用或服用从史前红鲷鱼中提取的胶原蛋白，不但能延缓皮肤衰老，减少皱纹、色斑等岁月问题，更能改善人体新陈代谢。</p>
@@ -81,43 +133,144 @@
 					<div class="col-md-1"></div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="margin-bottom: 1%;">
 				<div class="col-md-1"></div>
-				<div class="col-md-8">
-					<form class="form-horizontal">
-						<div class="form-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-							<div class="col-sm-10">
-								<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-							<div class="col-sm-10">
-								<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-							</div>
-						</div>
-						<div class="row">
-						<div class="col-md-2 col-xs-2"></div>
+				<div class="col-md-11">
 						<div class="col-md-10 col-sm-10">
-				<textarea class="form-control" rows="15" placeholder="登录后可以评论喔！"></textarea>
-			</div>
-			</div>
-						<form class="form-horizontal">
-							
-							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-default float">Sign in</button>
-								</div>
-							</div>
-						</form>
-				</div>
-				<div class="col-md-3"></div>
-				
+				<textarea class="form-control" rows="15" placeholder="可以发你观点喔！"></textarea>
 			</div>
 			
+						<form class="form-horizontal">
+							
+								<div class=" col-sm-10">
+									<button type="submit" class="btn btn-default float">发送</button>
+								</div>
+						</form>
+				</div>
+				</div>
+			</div>
+		</div>
+			<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<div class="footer-middle-in">
+							<h3>关于我们</h3>
+							<p>本站只是用于介绍海岛景点，不支持飞机订票，酒店订约等服务，感谢你们对我们的关注。</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<div class="footer-middle-in">
+							<h3>信息</h3>
+							<ul>
+								<li><a href="javascritp:void(0);">关于我们</a></li>
+								<li><a href="javascritp:void(0);">常见问题</a></li>
+								<li><a href="javascritp:void(0);">隐私政策</a></li>
+								<li><a href="javascritp:void(0);">条款条件</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<div class="footer-middle-in">
+							<h3>客户服务</h3>
+							<ul>
+								<li><a href="content.html">联系我们</a></li>
+								<li><a href="javascritp:void(0);">意见反馈</a></li>
+								<li><a href="javascritp:void(0);">站点地图</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12">
+						<div class="footer-middle-in">
+							<p style="padding-left: 20px;">关注微信</p>
+							<img src="img/weixin.jpg" />
+							<p>扫一扫，即可开启你的梦幻之旅</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="footer-class">Copyright © 2016.04 &nbsp;一切解释权归我所有 </p>
 		</div>
 
+		<!--模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/bld/bld.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/sbd/sbd.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/jzd/jzd.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/xwy/xwy.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/pjd/pjd.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModa6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content" style="width: 1000px;margin-left: -200px;height: 540px;">
+					<div class="modal-header" style="border: none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<img src="img/medf/medf.png">
+					<div class="modal-footer" style="border: none;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
