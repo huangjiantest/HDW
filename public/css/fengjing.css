@@ -4,8 +4,11 @@
 	}
 body{
 	background:#e9f5f8;
+	color: #286090;
 }
-
+h1{
+	color: #2B303A;
+}
 .float{
 	margin-top: 1%;
 }
@@ -31,10 +34,9 @@ body{
 .meishi{
 	padding: 0px;
 	margin: 3%;
-	padding: 0px;
 }
 .meishi1{
-		border: 1px solid #ccc;
+		border: 1px solid white;
 		float: left;
 		padding: 0px;
 		overflow: hidden;
