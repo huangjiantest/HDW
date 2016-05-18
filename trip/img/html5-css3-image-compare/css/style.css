@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+html {
+  font-family: 'Ubuntu Mono' arial, sans-serif;
+  background: #d1d1de;
+  text-align: center;
+  color: white;
+}
+
+.page-wrap {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 100%;
+  padding-top: 25px;
+}
+
+.toggle-function {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 10px 0 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5em;
+  text-align: center;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: white;
+  color: #d1d1de;
+}
+.btn:nth-child(2) {
+  border-left: none;
+}
+.btn:nth-child(1) {
+  background-color: transparent;
+  color: white;
+}
+.stay .btn {
+  background-color: #d1d1de;
+  color: white;
+}
+.stay .btn:nth-child(1) {
+  background-color: white;
+  color: #d1d1de;
+}
+
+.vfx-image-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 600px;
+  min-height: 273px;
+  margin-bottom: 40px;
+  cursor: ew-resize;
+}
+
+.before-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 50%;
+  overflow: hidden;
+}
+
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.divider-bar {
+  position: absolute;
+  width: 2px;
+  left: 50%;
+  top: -10px;
+  bottom: -15px;
+  background: white;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,71 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+$grey: #d1d1de;
+html {
+ font-family: 'Ubuntu Mono' arial, sans-serif;
+  background:$grey;
+  text-align:center;
+  color:white;
+}
+.page-wrap {
+  margin:0 auto;
+  width:600px;
+  max-width:100%;
+  padding-top:25px;
+}
+.toggle-function {
+  text-align:center;
+  width:100%;
+  display:block;
+  margin: 10px 0 25px 0;
+}
+.btn {
+  display:inline-block;
+  padding:.5em;
+  text-align:center;
+  border: 2px solid white;
+  cursor:pointer;
+  background-color:white; color:$grey;
+  &:nth-child(2){border-left:none;}
+  &:nth-child(1){background-color:transparent; color:white;}
+  .stay & {background-color:$grey; color:white;}
+  .stay &:nth-child(1) { background-color:white; color:$grey; }
+}
+.vfx-image-wrap {
+  position:relative;
+  display:inline-block;
+  margin:0 auto;
+  width:600px;
+  min-height:273px;
+  margin-bottom:40px;
+  
+  // Finally a use for this guy... I've always wondered...
+  cursor: ew-resize;
+}
+.before-image {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width:50%;
+  overflow:hidden;
+}
+.after-image {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+}
+
+.divider-bar {
+    position: absolute;
+    width: 2px;
+    left: 50%;
+    top: -10px;
+    bottom: -15px;
+    background: white;
+    height:100%;display:block;
+    z-index:2;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+  }
