@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>鼠标经过图片半透明效果文字滑动显示</title> 
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- 代码部分begin -->
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		
+		a,
+		img {
+			border: 0;
+		}
+		
+		body {
+			font: 12px;
+		}
+		
+		.clearfix:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		
+		.clearfix {
+			display: inline-table;
+		}
+		/* Hides from IE-mac \*/
+		
+		*html .clearfix {
+			height: 1%;
+		}
+		
+		.clearfix {
+			display: block;
+		}
+		/* End hide from IE-mac */
+		
+		*+html .clearfix {
+			min-height: 1%;
+		}
+		/* lanrenzhijia */
+		
+		.lanrenzhijia {
+			width: 1250px;
+			margin: 10px auto 0 auto;
+			overflow: hidden;
+		}
+		
+		.lanrenzhijia ul {
+			width: 1250px;
+		}
+		
+		.lanrenzhijia ul li {
+			float: left;
+			margin-right: 6px;
+			margin-bottom: 10px;
+			display: inline;
+			width: 300px;
+			height: 430px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.lanrenzhijia ul li .photo {
+			width: 300px;
+			height: 430px;
+			overflow: hidden;
+		}
+		
+		.lanrenzhijia .rsp {
+			width: 300px;
+			height: 430px;
+			overflow: hidden;
+			position: absolute;
+			background: #000;
+			top: 0px;
+			left: 0px;
+		}
+		
+		.lanrenzhijia .text {
+			position: absolute;
+			width: 300px;
+			height: 430px;
+			left: -300px;
+			top: 0px;
+			overflow: hidden;
+		}
+		
+		.lanrenzhijia .text h3 {
+			width: 300px;
+			margin-top: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 20px;
+		}
+		
+		.lanrenzhijia .text a {
+			text-decoration: none
+		}
+		
+		.lanrenzhijia .text div {
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 18px;
+		}
+	</style>
+	<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="container">		
+	<div class="lanrenzhijia">
+		<ul class="clearfix">
+			<li>
+				<div class="photo"><img src="img/501.jpg" width="300" height="430" /></div>
+				<div class="rsp"></div>
+				<div class="text"><a href=""><h3>三亚婚纱照</h3><div>POST TIME :2014.02.21</div>></a></div>
+			</li>
+			<li>
+				<div class="photo"><img src="img/502.jpg" width="300" height="430" /></div>
+				<div class="rsp"></div>
+				<div class="text"><a href=""><h3>樱花树婚纱照</h3><div>POST TIME :2014.02.22</div></a></div>
+			</li>
+			<li>
+				<div class="photo"><img src="img/503.jpg" width="300" height="430" /></div>
+				<div class="rsp"></div>
+				<div class="text"><a href=""><h3>爱丽丝庄园婚纱照</h3><div>POST TIME :2014.02.23</div></a></div>
+			</li>
+			<li>
+				<div class="photo"><img src="img/504.jpg" width="300" height="430" /></div>
+				<div class="rsp"></div>
+				<div class="text"><a href=""><h3>北戴河婚纱照</h3><div>POST TIME :2014.02.24</div></a></div>
+			</li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+	<!-- 代码部分end -->
+	    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</body>
+	<script src="js/3.js"></script>
+	<script>
+		$(function() {
+			$(".lanrenzhijia ul li .rsp").hide();
+			$(".lanrenzhijia ul li").hover(function() {
+					$(this).find(".rsp").stop().fadeTo(500, 0.5)
+					$(this).find(".text").stop().animate({
+						left: '0'
+					}, {
+						duration: 500
+					})
+				},
+				function() {
+					$(this).find(".rsp").stop().fadeTo(500, 0)
+					$(this).find(".text").stop().animate({
+						left: '300'
+					}, {
+						duration: "fast"
+					})
+					$(this).find(".text").animate({
+						left: '-300'
+					}, {
+						duration: 0
+					})
+				});
+		});
+	</script>
+</html>

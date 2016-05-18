@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>鼠标经过图片半透明效果文字滑动显示</title>
+</head>
+<body>
+<!-- 代码部分begin -->
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-table;}/* Hides from IE-mac \*/
+*html .clearfix{height:1%;}
+.clearfix{display:block;}/* End hide from IE-mac */
+*+html .clearfix{min-height:1%;}
+/* lanrenzhijia */
+.lanrenzhijia{width:1250px;margin:10px auto 0 auto;overflow:hidden;}
+.lanrenzhijia ul{width:1250px;}
+.lanrenzhijia ul li{float:left;margin-right:6px;margin-bottom:10px;display:inline;width:300px;height:430px;overflow:hidden;position:relative;}
+.lanrenzhijia ul li .photo{width:300px;height:430px;overflow:hidden;}
+.lanrenzhijia .rsp{width:300px;height:430px;overflow:hidden;position: absolute;background:#000;top:0px;left:0px;}
+.lanrenzhijia .text{position:absolute;width:300px;height:430px;left:-300px;top:0px;overflow:hidden;}
+.lanrenzhijia .text h3{width:300px;margin-top:100px;height:50px;line-height:50px;text-align:center;color:#FFFFFF;font-size:20px;}
+.lanrenzhijia .text a{text-decoration:none}
+.lanrenzhijia .text div{text-align:center;color:#FFFFFF;font-size:18px;}
+</style>
+<div class="lanrenzhijia">
+	<ul class="clearfix">
+		<li>
+			<div class="photo"><img src="http://demo.lanrenzhijia.com/2014/pic0704/images/lanrenzhijia01.jpg" width="300" height="430" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>三亚婚纱照</h3><div>POST TIME :2014.02.21</div>></a></div>
+		</li>
+		<li>
+			<div class="photo"><img src="http://demo.lanrenzhijia.com/2014/pic0704/images/lanrenzhijia02.jpg" width="300" height="430" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>樱花树婚纱照</h3><div>POST TIME :2014.02.21</div></a></div>
+		</li>
+		<li>
+			<div class="photo"><img src="http://demo.lanrenzhijia.com/2014/pic0704/images/lanrenzhijia03.jpg" width="300" height="430" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>爱丽丝庄园婚纱照</h3><div>POST TIME :2014.02.21</div></a></div>
+		</li>
+		<li>
+			<div class="photo"><img src="http://demo.lanrenzhijia.com/2014/pic0704/images/lanrenzhijia04.jpg" width="300" height="430" /></div>
+			<div class="rsp"></div>
+			<div class="text"><a href=""><h3>北戴河婚纱照</h3><div>POST TIME :2014.02.21</div></a></div>
+		</li>		
+	</ul>
+	<div class="clear"></div>
+</div>
+
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".lanrenzhijia ul li .rsp").hide();	
+	$(".lanrenzhijia ul li").hover(function(){
+		$(this).find(".rsp").stop().fadeTo(500,0.5)
+		$(this).find(".text").stop().animate({left:'0'}, {duration: 500})
+	},
+	function(){
+		$(this).find(".rsp").stop().fadeTo(500,0)
+		$(this).find(".text").stop().animate({left:'300'}, {duration: "fast"})
+		$(this).find(".text").animate({left:'-300'}, {duration: 0})
+	});
+});
+</script>
+<!-- 代码部分end -->
+</body>
+</html>
