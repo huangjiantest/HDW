@@ -19,15 +19,16 @@
   color: white;
 }
 .header .nav-top ul li:hover {
-  background: #ccc;
+  background: #478480;
 }
 .header .nav-top .search {
   position: relative;
   float: right;
-  background: #DCDCDC;
+  background: #f8f8ff;
+  border: 1px solid #74adaa;
 }
 .header .nav-top .search input[type="text"] {
-  width: 262px;
+  width: 260px;
   border: none;
   padding: 10px 20px;
   background: none;
