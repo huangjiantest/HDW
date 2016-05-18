@@ -44,7 +44,7 @@
 .footer {
   width: 90%;
   margin: 0 auto;
-  background: #555;
+  background: #333;
 }
 .footer-middle-in {
   float: left;
@@ -93,7 +93,7 @@
     line-height: 150px;
   }
   .header .row .nav-top ul {
-    width: 285px;
+    width: 262px;
   }
   #tianqi {
     margin-right: -10px;

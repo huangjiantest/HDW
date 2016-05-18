@@ -4,7 +4,7 @@
   font-size: 12px;
 }
 body {
-  background: #9ACFEA;
+  background: white;
 }
 a {
   text-decoration: none;
@@ -25,7 +25,7 @@ li {
 }
 .hend-style .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -120,7 +120,7 @@ li {
 }
 .nav-title .tab-content .content .ong-img1 .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -144,7 +144,7 @@ li {
 }
 .nav-title .tab-content .content .ong-img2 .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -168,7 +168,7 @@ li {
 }
 .nav-title .tab-content .content .two-img1 .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -192,7 +192,7 @@ li {
 }
 .nav-title .tab-content .content .two-img2 .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -216,7 +216,7 @@ li {
 }
 .nav-title .tab-content .content .three-img1 .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -240,7 +240,7 @@ li {
 }
 .nav-title .tab-content .content .three-img2 .hend a {
   height: 30px;
-  background: white;
+  background: #ccc;
   line-height: 30px;
   display: block;
   font-size: 14px;
@@ -357,7 +357,7 @@ li {
   color: #666;
 }
 .link ul li a:hover {
-  color: white;
+  color: blue;
 }
 @media (max-width: 768px) {
   .banner .little-box {
