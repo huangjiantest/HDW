@@ -1,0 +1,29 @@
+<style id="newsList" type="text/css">
+	<div class="panel panel-default">
+	    <div class="panel-heading">游客留言</div>
+	    <table class="table">
+	      <thead>
+	        <tr>
+	          <th>#</th>
+	          <th>留言人</th>
+			  <th>内容</th>
+	          <th>添加时间</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      	<% news.forEach(function( message ){ %>
+	      		<tr>
+		          <td><%= message.mid %></td>
+		          <td><%= message.peoples %></td>
+				  <td><%= message.mcontent %></td>
+		          <td><%= message.time %></td>
+		          <td>
+			        <a href="#/newsDel/<%= message.mid %>">删除</a>&nbsp;&nbsp;
+					<a href="#/previewss/<%= message.mid %>">预览</a>
+		          </td>
+		        </tr>
+	      	<% })%>
+	      </tbody>
+	    </table>
+	</div>
+</style>

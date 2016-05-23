@@ -1,0 +1,7 @@
+.idea
+.vscode
+node_modules
+npm-debug.log
+publish.sh
+logs
+*.DS_Store

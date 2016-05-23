@@ -2,18 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>登录</title>
+    <title>后台登录</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- site css -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="bookmark" href="favicon.ico"/>
     <link rel="stylesheet" href="css/site.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/site.min.js"></script>
-    <script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/validate.js" type="text/javascript" charset="utf-8"></script>
     <style>
       body {
         padding-top: 40px;
@@ -21,81 +20,68 @@
         background-color: #303641;
         color: #C1C3C6
       }
-      .loadding{
-      	position: fixed;
-      	top: 0px;
-      	bottom: 0px;
-      	left: 0px;
-      	right: 0px;
-      	background: rgba(0,0,0,0.4);
-      	z-index: 999;
-      }
-      .loadding img{
-      	position: absolute;
-      	top: 50%;
-      	left: 50%;
-      	margin-left: -0px;
-      	margin-top: -0px;
-      }
     </style>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
     <script type="text/javascript">
     	$(function(){
-    		$("#username").val(localStorage.getItem("username"));//获取username的cookie并传给服务器
-    		$("#password").val(localStorage.getItem("password"));//获取password的cookie并传给服务器
-    		if(localStorage.getItem("username")){
-    			$("#remenberme").parent().addClass("checked");
+    		$("#username").val(localStorage.getItem("username"));
+    		$("#password").val(localStorage.getItem("password"));
+    		if( localStorage.getItem("username") ){
+    			$("#remember").parent().addClass("checked");
     		}
     		$(".btn-primary").click(function(){
-    			var uname = $("#username").val();
+    			var username = $("#username").val();
     			var password = $("#password").val();
-    			if($.yanzheng.isEmpty(uname) == false){
-    				$(".form-signin .alert").alterMes({message:"用户名不能为空!"});
+    			if( $.validate.isEmpty( username ) == false ){
+    				$(".form-signin .alert").alertMes({message:"用户名不能为空"});
     				$("#username").select();
     				return false;
     			}
-    			if($.yanzheng.isEmail(uname) == false){
-    				$(".form-signin .alert").alterMes({type:"danger",message:"用户名格式错误!"});
-    				$("#username").select();
-    				return false;
-    			}
-    			if($.yanzheng.isEmpty(password) == false){
-    				$(".form-signin .alert").alterMes({message:"密码不能为空!"});
+    			if( $.validate.isEmail( username ) == false ){
+    				$(".form-signin .alert").alertMes({type:"danger",message:"用户名不符合邮箱的格式"});
     				$("#password").select();
     				return false;
     			}
-    			var remenberme = $("#remenberme").is(":checked");//判断是否勾选记住我
+    			if( $.validate.isEmpty( password ) == false ){
+    				$(".form-signin .alert").alertMes({message:"密码不能为空"});
+    				$("#password").select();
+    				return false;
+    			}
+    			var remember = $("#remember").is(":checked");  //判断记住选项是否勾选
     			$._ajax({
-    				url : "/login",
-    				data : {username:uname,password:password,remenberme:remenberme},
-    			}).done(function(obj){//一个函数或者数组函数，延迟成功时调用
-    					if(obj.code){
-    						/*$(".form-signin .alert").alterMes({message:obj.message});*/
-    						if(remenberme){
-    							localStorage.setItem("username",uname);
-    							localStorage.setItem("password",password);
-    						}else{
-    							localStorage.removeItem("username");
-    							localStorage.removeItem("password");
-    						}
-    						window.location.href = "/admin/admin.html";
-    					}else{
-    						$(".form-signin .alert").alterMes({type:"danger",message:obj.message});
-    					}
-    			}).fail(function(){//一个函数或者数组函数，延迟失败时调用
-    					$(".form-signin .alert").alterMes({type:"danger",message:"服务器出错,请稍后重试!"});
-    			});
+    				url : "/login/login", 
+    				data:{username:username,password:password,remember:remember},
+    			}).done(function( obj ){
+						if( obj.code == 1 ){
+	    				$(".form-signin .alert").alertMes({type:"success",message:obj.msg});
+	    				if( remember ){
+	    					localStorage.setItem("username",username);
+	    					localStorage.setItem("password",password);
+	    				}else{
+	    					localStorage.removeItem("username");
+	    					localStorage.removeItem("password");
+	    				}
+	    				window.location.href = "/admin/index";
+	    			}else{
+	    				$(".form-signin .alert").alertMes({type:"danger",message:obj.msg});
+	    			}
+		    	}).fail(function() {
+    				  $(".form-signin .alert").alertMes({type:"danger",message:"服务器没有响应，请稍后重试!"});
+    			});	
     		});
-    	});
+    	})
     </script>
   </head>
   <body>
     <div class="container">
       <form class="form-signin" role="form">
         <h3 class="form-signin-heading">请登录</h3>
-        <div class="alert alert-warning alert-dismissable" style="display: none;">
-	        <button type="button" class="close">×</button>
-	        <strong class="title"></strong><span class="message"></span>
-	      </div>
+        <div class="form-group">
+        	<div class="alert alert-dismissable" style="display: none;">
+            <button type="button" class="close">×</button>
+            <strong class="title"></strong><span class="message"></span>
+          </div>
+        </div>
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">
@@ -113,10 +99,11 @@
           </div>
         </div>
         <label class="checkbox">
-          <input type="checkbox" id="remenberme"> &nbsp;记住我
+          <input type="checkbox" id="remember" value="remember-me"> &nbsp; 记住
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="button">登录</button>
       </form>
+      <h3 style="text-align: center;"><a href="index.html">返回首页</a></h3>
     </div>
   </body>
 </html>

@@ -1,0 +1,33 @@
+<style id="adviceList" type="text/css">
+	<div class="panel panel-default">
+	    <div class="panel-heading">游客建议</div>
+	    <table class="table">
+	      <thead>
+	        <tr>
+	          <th>#</th>
+	          <th>游客名称</th>
+	          <th>游客E-mail</th>
+	          <th>标题</th>
+	          <th>内容</th>
+	          <th>时间</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      	<% advices.forEach(function( advice ){ %>
+	      		<tr>
+		          <td><%= advice.nid %></td>
+		          <td><%= advice.nname %></td>
+		          <td><%= advice.email %></td>
+		          <td><%= advice.ntitle %></td>
+		          <td><%= advice.content %></td>
+		          <td><%= advice.addtime %></td>
+		          <td>
+			          <a href="#/adviceDel/<%= advice.nid %>">删除</a>
+			          <a href="#/previews/<%= advice.nid %>">预览</a>
+		          </td>
+		        </tr>
+	      	<% })%>
+	      </tbody>
+	    </table>
+	</div>
+</style>

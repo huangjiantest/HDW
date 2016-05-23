@@ -8,10 +8,7 @@
 		var reg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 		return reg.test(value);
 	}
-	//option (type,title,message,timeout)
-	//type (warning,danger,info,success)
 	$.fn.alterMes = function(option){
-		//判断type输入的合法性
 		var typeObj = {warning:"警告！",danger:"错误！",info:"提示！",success:"正确！"};//JSON函数对象
 		if(!option.type || !typeObj[option.type]){
 			option.type = "info";
@@ -27,9 +24,7 @@
 			that.removeClass("alert-" + option.type);
 			that.hide("fast");
 		});
-		
 		var time = option.timeout || 2500;
-		//自动消失
 		setTimeout(function(){
 			that.removeClass("alert-" + option.type);
 			that.hide("fast");
@@ -58,7 +53,6 @@
 	$.loaddingEnd = function(){//移除模态框
 		$("#loadding").remove();
 	}
-	
 	/*
 	 * 获取cookie
 	 * 如果找到cookie,返回cookie value

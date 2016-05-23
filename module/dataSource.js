@@ -1,19 +1,18 @@
 var dataSource = function(){
-	//创建数据库连接池
-	this.pool = mysql.createPool({
-		connectionLimit : 10,
-		host : "localhost",
-		user : "root",
-		password : "",
-		database : "epary",
-		dateStrings : true//数据库时间改为正常年月显示
+	this.pool  = mysql.createPool({
+	  connectionLimit : 10,
+	  host            : 'localhost',
+	  user            : 'root',
+	  password        : '',
+	  database        : 'trip',
+	  dateStrings     : true
 	});
 }
-//建立数据库连接
-dataSource.prototype.getConn = function( ep ) {
-	this.pool.getConnection(ep.done("conn"));//执行conn函数
+
+dataSource.prototype.getConn = function( ep ){
+	this.pool.getConnection( ep.done("conn") );
 }
 
-module.exports = function() {
+module.exports = function(){
 	return new dataSource();
 }

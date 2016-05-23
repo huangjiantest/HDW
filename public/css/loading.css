@@ -1,0 +1,16 @@
+.load{
+	position: fixed;
+	top: 0px; bottom: 0px; left: 0px; right: 0px; background: rgba( 0,0,0,.4); z-index: 999;
+}
+.load img{
+	position: absolute; top: 50%; left: 50%; margin-top: -250px; margin-left: -250px;
+}
+
+.enter{
+	transform: translateX(100%);
+	transition-duration: 0.2s;
+}
+.leave{
+	transform: translateX(0);
+	transition-duration: 0.2s;
+}
