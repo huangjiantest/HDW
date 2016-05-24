@@ -48,7 +48,7 @@ create table message
    mid                  int not null auto_increment,
    mcontent             text,
    time                 datetime,
-   peoples              varchar(20),
+   peoples              varchar(50),
    primary key (mid)
 )default charset=utf8;
 

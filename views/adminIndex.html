@@ -39,7 +39,6 @@
                 <$ if( user.issuper == 0 ){ $>
                 	<li class="list-group-item"><a href="#/adminList"><i class="glyphicon glyphicon-user"></i>管理员</a></li>
                 <$ } $>
-                <li class="list-group-item"><a href="#/adviceList"><i class=" glyphicon glyphicon-th"></i>游客建议</a></li>
                 <li class="list-group-item"><a href="#/newsList"><i class="glyphicon glyphicon-list-alt"></i>游客留言</a></li>
               </ul>
           </div>
@@ -56,8 +55,8 @@
     <$- include('admin/adminList.html') $>
     <$- include('admin/adminAdd.html') $>
     <$- include('admin/newsList.html') $>
-    <$- include('admin/newspreviews.html') $>
-    <$- include('admin/adviceList.html') $>
+    <$- include('admin/messages.html') $>
+    <$- include("admin/newsAdd.html") $>
   </body>
   <script type="text/javascript" src="/js/site.min.js"></script>
   <script src="/js/ejs.min.js" type="text/javascript" charset="utf-8"></script>

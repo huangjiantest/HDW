@@ -4,7 +4,7 @@ loginControl.prototype.login = function( req,res,next ){
 	//第一步，取数据库连接
 	dataSource.getConn( ep );
 	//第二步，执行sql命令
-		data = [req.body.username,req.body.password];
+	data = [req.body.username,req.body.password];
 	loginModule.login( ep,data );
 	//第三步，处理sql执行成功的操作
 	ep.on("success",function( rows ){

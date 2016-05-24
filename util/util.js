@@ -1,6 +1,5 @@
 exports.loadConfig = function( path ) {
 	path = path || rootpath + "/config/message.json";
-	
 	var data = fs.readFileSync(path);
 	return JSON.parse(data);
 }

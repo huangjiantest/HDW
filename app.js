@@ -24,13 +24,11 @@ global.dataSource = require("./module/dataSource.js")();
 global.loginModule = require("./module/loginModule.js")();
 global.adminModule = require("./module/adminModule.js")();
 global.newsModule = require("./module/newsModule.js")();
-global.adviceModule = require("./module/adviceModule.js")();
 
 //加载控制器
 global.loginControl = require("./control/loginControl.js")();   //注意顺序问题  最底层先调用
 global.adminIndexControl = require("./control/adminIndexControl.js")(); 
 global.newsControl = require("./control/newsControl.js")();
-global.adviceControl = require("./control/adviceControl.js")();
 
 //加载路由
 global.loginRouter = require("./router/loginRouter.js");

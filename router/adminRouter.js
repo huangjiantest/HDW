@@ -7,12 +7,8 @@ adminrouter.delete("/admin/:id",adminIndexControl.adminDel); //删除
 
 //消息管理API
 adminrouter.get("/news",newsControl.newsList);
-adminrouter.get("/news/:nid",newsControl.previews);
-adminrouter.delete("/news/:nid",newsControl.newsDel);
-
-//留言管理API
-adminrouter.get("/advices",adviceControl.adviceList);
-adminrouter.delete("/advices/:mid",adviceControl.adviceDel);
-adminrouter.get("/advices/:mid",adviceControl.previews);
+adminrouter.get("/news/:mid",newsControl.previews);
+adminrouter.post("/news",newsControl.newsAdd);
+adminrouter.delete("/news/:mid",newsControl.newsDel);
 
 module.exports = adminrouter;

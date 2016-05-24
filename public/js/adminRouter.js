@@ -7,7 +7,6 @@ $(function(){
 	//显示管理员列表
 	var adminList = {
 		 url : "/adminList",
-		 className : "adminList",
 		 ajaxData : function(){
 		 	var that = this;
 		 	return $._ajax({
@@ -72,7 +71,7 @@ $(function(){
 		}
 	}
 	
-	//新闻管理
+	//留言管理
 	var newsList = {
 		url : "/newsList",
 		ajaxData : function(){
@@ -104,23 +103,15 @@ $(function(){
 		},
 		bind : function(){
 			var t = $(this);
-			t.find("#editor").wysiwyg();
 			$(this).find("#sub").click(function(){
-				var ntitle = t.find("#ntitle").val();
-				var content = t.find("#editor").html();
-				var author = t.find("#author").val();
-				if( $.validate.isEmpty(ntitle) == false ){
-					return t.find(".alert").alertMes({message:"新闻标题不能为空"});
-				}
+				var mcontent = t.find("#mcontent").val();
+				var peoples = t.find("#peoples").val();
 				$._ajax({
 					url : "/admin/news",
-					data : {"ntitle":ntitle,"content":content,"author":author}
+					data : {"mcontent":mcontent,"peoples":peoples}
 				}).done(function( obj ){
 					if( obj.code ){
-						//如果增加成功，返回管理员列表
 						location.href = "/admin/index#/newsList";
-					}else{
-						$(this).find(".alert").alertMes({type:"danger",message:obj.msg});
 					}
 				});
 				
@@ -128,11 +119,11 @@ $(function(){
 		}
 	}
 	var newsDel = {
-		url : "/newsDel/:nid",
+		url : "/newsDel/:mid",
 		ajaxData : function(){
 			var t = this;
 			$._ajax({
-				url  : "/admin/news/" + t.params.nid,
+				url  : "/admin/news/" + t.params.mid,
 				type : "delete"
 			}).done(function(){
 				location.href = "/admin/index#/newsList";
@@ -142,23 +133,7 @@ $(function(){
 	}
 	
 	var previews = {
-		url : "/previews/:nid",
-		ajaxData : function(){
-			var that = this;
-			return $._ajax({
-				url  : "/admin/advices/" + that.params.nid,
-				type : "get"
-			}).done(function( data ){
-				that.data = data;
-			});
-		},
-		render : function(){
-			return ejs.render($("#newspreviews").html(),{n:this.data[0]});
-		}
-	}
-	
-	var previewss = {
-		url : "/previewss/:mid",
+		url : "/previews/:mid",
 		ajaxData : function(){
 			var that = this;
 			return $._ajax({
@@ -169,37 +144,7 @@ $(function(){
 			});
 		},
 		render : function(){
-			return ejs.render($("#messageprive").html(),{message:this.data[0]});
-		}
-	}
-	
-	//留言管理
-	var adviceList = {
-		url : "/adviceList",
-		ajaxData : function(){
-			var that = this;
-			return $._ajax({
-				url  : "/admin/advices",
-				type : "get"
-			}).done(function( data ){
-				that.data = data;
-			});
-		},
-		render : function(){
-			return ejs.render($("#adviceList").html(),{advices:this.data});
-		}
-	}
-	var adviceDel = {
-		url : "/adviceDel/:mid",
-		ajaxData : function(){
-			var t = this;
-			$._ajax({
-				url  : "/admin/advices/" + t.params.mid,
-				type : "delete"
-			}).done(function(){
-				location.href = "/admin/index#/adviceList";
-			});
-			return false;
+			return ejs.render($("#previews").html(),{message:this.data[0]});
 		}
 	}
 	
@@ -213,12 +158,10 @@ $(function(){
 	router.push(adminList)
 		  .push(adminAdd)
 		  .push(adminDel)
+		  .push(previews)
 		  .push(newsList)
 		  .push(newsAdd)
 		  .push(newsDel)
-		  .push(previews)
 		  .push(home)
-		  .push(adviceList)
-		  .push(adviceDel)
 		  .setDefault('/').init();
 });
