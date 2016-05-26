@@ -24,15 +24,18 @@ global.dataSource = require("./module/dataSource.js")();
 global.loginModule = require("./module/loginModule.js")();
 global.adminModule = require("./module/adminModule.js")();
 global.newsModule = require("./module/newsModule.js")();
+global.listModule = require("./module/listModule.js")();
 
 //加载控制器
 global.loginControl = require("./control/loginControl.js")();   //注意顺序问题  最底层先调用
 global.adminIndexControl = require("./control/adminIndexControl.js")(); 
 global.newsControl = require("./control/newsControl.js")();
+global.listControl = require("./control/listControl.js")();
 
 //加载路由
 global.loginRouter = require("./router/loginRouter.js");
 global.adminRouter = require("./router/adminRouter.js");
+global.gllist = require("./router/gllist.js");
 
 //创建服务器
 var app = express();
@@ -59,6 +62,7 @@ ejs.delimiter = "$";   //改变后台渲染的符号
 app.use("admin/favicon.ico",util.favicon);
 app.use("/login",loginRouter);
 app.use("/admin",util.checkLogin,adminRouter);  //进人admin要验证是否登录
+app.use("/li",gllist);
 
 //配置静态服务器
 app.use(express.static('public'));  //托管静态页面

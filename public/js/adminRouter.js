@@ -155,6 +155,7 @@ $(function(){
 			return "<h1>欢迎来到Sea-Island-Trip后台管理页面</h1>"
 		}
 	}
+	
 	router.push(adminList)
 		  .push(adminAdd)
 		  .push(adminDel)

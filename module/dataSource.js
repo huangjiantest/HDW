@@ -1,7 +1,7 @@
 var dataSource = function(){
 	this.pool  = mysql.createPool({
 	  connectionLimit : 10,
-	  host            : 'localhost',
+	  host            : '127.0.0.1',
 	  user            : 'root',
 	  password        : '',
 	  database        : 'trip',

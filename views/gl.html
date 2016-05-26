@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旅游攻略</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="/css/yangshi.css" />
+		<link rel="stylesheet" type="text/css" href="/css/gg.css" />
+		<style type="text/css">
+			.tittle {
+				text-align: center;
+			}
+			
+			.fenye {
+				margin: 0px auto;
+			}
+			
+			.fuck {
+				margin-top: 0px;
+			}
+			
+			.glyphicon {
+				text-align: center;
+			}
+			
+			.header .nav-top .search input[type="text"] {
+				width: 283px;
+				border: none;
+				padding: 10px 20px;
+				background: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-xs-12 col-sm-7 col-lg-6">
+						<div class="logo">
+							<img src="/img/logo.png" width="100px" />
+							<img src="/img/logo_font.png" width="100px" />
+						</div>
+						<p class="logo-font">海滩,海浪,阳光,浪漫的情怀</p>
+					</div>
+					<div class="col-md-5 col-xs-12 col-sm-5 col-lg-6">
+						<div class="nav-top">
+							<ul>
+								<li>关注我们</li>
+								<li>活动</li>
+								<li>下载App</li>
+								<li><a href="/login.html" style="color: white;">登录</a></li>
+							</ul>
+							<div class="search">
+								<form action="" method="post">
+									<input type="text" placeholder="请输入海岛名称···" />
+									<input type="submit" value="" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-nav">
+				<nav class="navbar">
+					<div class="container">
+						<ul class="nav navbar-nav nav-me unstyled">
+							<li><a href="/index.html" class="three-d active">首页<span class="three-d-box"><span class="front">首页</span><span class="back">首页</span></span></a></li>
+							<li><a href="/visited.html" class="three-d">海岛景点<span class="three-d-box"><span class="front">海岛景点</span><span class="back">海岛景点</span></span></a></li>
+							<li><a href="/food.html" class="three-d">美食介绍<span class="three-d-box"><span class="front">美食介绍</span><span class="back">美食介绍</span></span></a></li>
+							<li><a href="/li" class="three-d">旅游攻略<span class="three-d-box"><span class="front">旅游攻略</span><span class="back">旅游攻略</span></span></a></li>
+							<li><a href="/content.html" class="three-d">联系我们<span class="three-d-box"><span class="front">联系我们</span><span class="back">联系我们</span></span></a></li>
+						</ul>
+						<iframe allowtransparency="true" frameborder="0" width="385" height="96" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=0&v=0&d=3&bd=0&k=&f=&q=1&e=1&a=1&c=59287&w=385&h=96&align=center" style="float: right;" id="tianqi"></iframe>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="content">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a></h3>
+              </div>
+              <div class="panel-body" id="container">
+				  <div>
+					<$ lists.forEach(function( list ){ $>
+						<div style="margin: 0px auto;width: 90%;">
+							<p><$= list.peoples $></p>
+							<p><$= list.mcontent $></p>
+							<p><$= list.time $></p>
+							<hr/>
+						</div>
+					<$ }) $>
+  			  	</div>
+			  </div>
+            </div>
+        </div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<div class="footer-middle-in">
+							<h3>关于我们</h3>
+							<p>本站只是用于介绍海岛景点，不支持飞机订票，酒店订约等服务，感谢你们对我们的关注。</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<div class="footer-middle-in">
+							<h3>信息</h3>
+							<ul>
+								<li><a href="javascritp:void(0);">关于我们</a></li>
+								<li><a href="javascritp:void(0);">常见问题</a></li>
+								<li><a href="javascritp:void(0);">隐私政策</a></li>
+								<li><a href="javascritp:void(0);">条款条件</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<div class="footer-middle-in">
+							<h3>客户服务</h3>
+							<ul>
+								<li><a href="content.html">联系我们</a></li>
+								<li><a href="javascritp:void(0);">意见反馈</a></li>
+								<li><a href="javascritp:void(0);">站点地图</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12">
+						<div class="footer-middle-in">
+							<p style="padding-left: 20px;">关注微信</p>
+							<img src="img/weixin.jpg" />
+							<p>扫一扫，即可开启你的梦幻之旅</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="footer-class">Copyright © 2016.04 &nbsp;一切解释权归我所有 </p>
+		</div>
+	</body>
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>
