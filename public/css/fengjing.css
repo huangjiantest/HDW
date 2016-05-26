@@ -11,6 +11,7 @@ h1{
 }
 .float{
 	margin-top: 1%;
+	margin-right:100px ;
 }
 .row .tit{
 }
@@ -79,6 +80,9 @@ h1{
      .gallery:hover .row_pic  .meishixiaotu .meishi1 p strong{
      	color:green;
      }
+.form-control{
+	padding: 0px !important;
+}
 
 @media (max-width:455px) {
 	.row .tit .pic {
@@ -102,9 +106,10 @@ h1{
 	.meishi  img {
 		width: 80%;
 		text-align: center;
-	}
+	}	
 	.meishi1{
 		margin-left:10% ;
 		width: 80%;
 	}
+	
 }
